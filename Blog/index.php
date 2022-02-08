@@ -1,6 +1,16 @@
 <?php
     require_once "backend.php";
 
+    $mysql = new mysqli('localhost','root', 'root','BLOG');
+    $mysql->set_charset('utf8');
+
+    if($mysql == TRUE){
+        echo "Banco Conectado";
+    }else{
+        echo "Sem sucesso";
+    }
+
+
     $artigo = new Artigo();
     $artigos = $artigo->exibirTodos();
 ?>

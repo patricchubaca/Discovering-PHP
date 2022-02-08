@@ -2,7 +2,7 @@
 
 $servername = "127.0.0.1";
 $username = "root";
-$password = "";
+$password = "root";
 $dbname = "myDBPDO";
 
 $nomeCurso = $_POST['nomeCurso'];
@@ -12,7 +12,7 @@ $descricaoCurso = $_POST['descricaoCurso'];
 $cargaHoraria = number_format($cargaHoraria, 2, ',', null);
 
 try {
-  $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+  $conn = new PDO("mysql:host=$servername;pordbname=$dbname", $username, $password);
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
   $query = "insert into tb_cursos(nome_curso,carga_horaria,descricao_curso)

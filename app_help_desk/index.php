@@ -1,6 +1,18 @@
 <?php
+$servername = "localhost";
+$username = "root";
+$password = "root";
+$dbname = "BLOG";
 
-require_once "conexao.php";
+try {
+  $conn = new PDO("mysql:host=$servername;port=3307;dbname=$dbname", $username, $password);
+  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  $stmt = $conn->prepare("SELECT * FROM artigos");
+  
+  $stmts = $stmt->execute();
+  $lista = $stmt->fetchAll(PDO::FETCH_OBJ);
 
-$conectar = new conectarDB();
-$conectar->conectar();
+  var_dump($lista);
+} catch (PDOException $e) {
+  echo $query .  "<br>" . $e->getMessage();
+}
