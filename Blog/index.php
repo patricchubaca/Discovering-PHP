@@ -1,5 +1,8 @@
 <?php
     require_once "backend.php";
+
+    $artigo = new Artigo();
+    $artigos = $artigo->exibirTodos();
 ?>
 
 <!DOCTYPE html>
