@@ -11,7 +11,11 @@ try {
   $stmts = $stmt->execute();
   $lista = $stmt->fetchAll(PDO::FETCH_OBJ);
 
-  var_dump($lista);
+
+  file_put_contents('/tmp/degubPatric', date('H:i:s').print_r($lista, 1)."\n", FILE_APPEND);
+  
+  
+
 } catch (PDOException $e) {
   echo $query .  "<br>" . $e->getMessage();
 }
