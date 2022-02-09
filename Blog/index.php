@@ -34,6 +34,7 @@
             </a>
         </h2>
         <p><?php echo $artigo['conteudo'] ?></p>
+        <p>Carga Horaria: <?php echo $artigo['cargaHoraria'] ?></p>
     </div>
     <?php } ?>
 </body>
