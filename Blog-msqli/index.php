@@ -13,6 +13,8 @@
 
     $artigo = new Artigo();
     $artigos = $artigo->exibirTodos();
+
+    Artigo::exibirTodos();
 ?>
 
 <!DOCTYPE html>
@@ -34,6 +36,7 @@
             </a>
         </h2>
         <p><?php echo $artigo['conteudo'] ?></p>
+
         <p>Carga Horaria: <?php echo $artigo['cargaHoraria'] ?></p>
     </div>
     <?php } ?>

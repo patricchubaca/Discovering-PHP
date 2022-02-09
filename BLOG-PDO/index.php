@@ -7,6 +7,9 @@ $stmt = $conn->prepare("SELECT * FROM artigos");
 $stmts = $stmt->execute();
 $lista = $stmt->fetchAll(PDO::FETCH_OBJ);
 
+echo "<pre>";
+var_dump($lista);
+echo "</pre>";
 file_put_contents('/tmp/degubPatric', date('H:i:s').print_r($lista, 1)."\n", FILE_APPEND);
 
 

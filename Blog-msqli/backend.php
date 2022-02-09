@@ -1,12 +1,12 @@
 <?php
 
 class  Artigo {
-    public function exibirTodos():array{
+     function exibirTodos():array{
         $artigos = [
             [
-                'link' => 'primeiros_passos_com_html',
-                'titulo' => 'Crimeiros passos com HTML5',
-                'conteudo' => 'Hoje vamos utilizar a lingueguem de marcação HTML',
+                'link' => 'primeiros_passos_com_PHP',
+                'titulo' => 'Crimeiros passos com O PHP',
+                'conteudo' => 'Hoje vamos utilizar a lingueguem de programação PHP',
                 'cargaHoraria' => '33:30' 
             ],
             [
