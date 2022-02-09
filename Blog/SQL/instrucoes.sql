@@ -42,10 +42,10 @@ CREATE TABLE IF NOT EXISTS `artigos` (
 -- Dumping data for table `artigos`
 --
 
-INSERT INTO `artigos` (`id`, `titulo`, `conteudo`) VALUES
-(1, 'Primeiros passos Spring', 'Fomos chamados para implementar um sistema em uma loja de produtos eletrônicos que ajudasse no controle das quantidades de produto que temos em loja. Começamos alinhando quais eram as operações que o cliente esperava poder realizar nesse controle de produtos.'),
-(2, 'Praticando para a Olimpíada Brasileira de Informática', 'Quando eu era mais novo, na época do segundo ano do ensino médio, estava decidido a fazer um curso técnico. Na época, estava indeciso entre dois cursos técnicos: química ou informática. Acabei optando por informática e gostei muito do curso. A parte que mais chamou minha atenção foi a parte de programação.'),
-(3, 'O que é Metodologia Ágil?', 'Uma vez fui contratada por uma empresa que desenvolvia softwares e aplicativos para outras empresas. Nela, um dos meus primeiros trabalhos era auxiliar no desenvolvimento de um aplicativo que visa permitir que as pessoas encontrem restaurantes baratos perto de onde ela se encontra.');
+INSERT INTO `artigos` (`id`, `titulo`, `conteudo`,`cargaHoraria`) VALUES
+(1, 'Primeiros passos Spring', 'Fomos chamados para implementar um sistema em uma loja de produtos eletrônicos que ajudasse no controle das quantidades de produto que temos em loja. Começamos alinhando quais eram as operações que o cliente esperava poder realizar nesse controle de produtos.','33:20'),
+(2, 'Praticando para a Olimpíada Brasileira de Informática', 'Quando eu era mais novo, na época do segundo ano do ensino médio, estava decidido a fazer um curso técnico. Na época, estava indeciso entre dois cursos técnicos: química ou informática. Acabei optando por informática e gostei muito do curso. A parte que mais chamou minha atenção foi a parte de programação.','22:20'),
+(3, 'O que é Metodologia Ágil?', 'Uma vez fui contratada por uma empresa que desenvolvia softwares e aplicativos para outras empresas. Nela, um dos meus primeiros trabalhos era auxiliar no desenvolvimento de um aplicativo que visa permitir que as pessoas encontrem restaurantes baratos perto de onde ela se encontra.','33:20');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
