@@ -4,7 +4,6 @@
 
     $obj_artigo = new Artigo($mysql);
     $artigos = $obj_artigo->encontrarPorId($_GET['id']);
-
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -20,15 +19,11 @@
         <h1> <?php echo $artigos['titulo']; ?></h1>
         <form action="adicionar-artigo.html" method="post">
             <p>
-                <label for=""></label>
-               
-            </p>
-            <p>
                 <label for=""> <?php echo $artigos['conteudo']; ?></label>
                
             </p>
             <p>
-                <label for=""> <?php echo $artigos['cargaHoriaria']; ?></label>
+                <label for=""> <?php echo $artigos['cargaHoraria']; ?></label>
                
             </p>
             <p>

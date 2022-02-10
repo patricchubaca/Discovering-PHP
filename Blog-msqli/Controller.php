@@ -19,7 +19,7 @@ class Artigo
     }
     public function encontrarPorId(string $id): array
     {
-        $selecionaArtigo = $this->mysql->prepare("SELECT id, titulo, conteudo FROM artigos WHERE id = ?");
+        $selecionaArtigo = $this->mysql->prepare("SELECT id, titulo, conteudo, cargaHoraria FROM artigos WHERE id = ?");
         $selecionaArtigo->bind_param('s', $id);
         $selecionaArtigo->execute();
         $artigos = $selecionaArtigo->get_result()->fetch_assoc();
