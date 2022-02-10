@@ -20,9 +20,9 @@
 <body>
     <?php foreach($artigos as $artigo){ ?>
     <div id="container">
-  
+   
         <h2>
-            <a href ="<?php echo $artigo['link']; ?>" >   
+            <a href ="artigo.php">   
                 <h1> <?php echo $artigo['titulo']; ?></h1>
             </a>
         </h2>
