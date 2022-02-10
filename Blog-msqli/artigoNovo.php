@@ -2,6 +2,9 @@
     require_once "ConexaoBD/Conexao.php"; 
     require_once "Controller.php";
 
+    $obj_artigo = new Artigo($mysql);
+    $artigos = $obj_artigo->encontrarPorId($_GET['id']);
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -14,16 +17,22 @@
 
 <body>
     <div id="container">
-        <h1>Titulo Artigo</h1>
+        <h1> <?php echo $artigos['titulo']; ?></h1>
         <form action="adicionar-artigo.html" method="post">
             <p>
-                <label for="">Digite o título do artigo</label>
+                <label for=""></label>
+               
             </p>
             <p>
-                <label for="">Digite o conteúdo do artigo</label>
+                <label for=""> <?php echo $artigos['conteudo']; ?></label>
+               
             </p>
             <p>
-                <button class="botao">Voltar</button>
+                <label for=""> <?php echo $artigos['cargaHoriaria']; ?></label>
+               
+            </p>
+            <p>
+                <button class="botao"><a href="index.php">Voltar</a></button>
             </p>
         </form>
     </div>
