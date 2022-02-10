@@ -1,5 +1,5 @@
-<?php 
-     //require_once "backend.php";
+<?php
+    //require_once "backend.php";
     //require_once "config.php";
     $mysql = new mysqli('localhost','root', 'root','BLOG');
     $mysql->set_charset('utf8');

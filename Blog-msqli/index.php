@@ -1,5 +1,10 @@
 <?php
+   require_once "Controller.php";
+   require_once "Conexao.php";
    
+   $artigo = new Artigo($mysql);
+   $artigo = $artigo->exibirTodos();
+
 ?>
 
 <!DOCTYPE html>
