@@ -1,6 +1,6 @@
 <?php
    require_once "Controller.php";
-   require_once "Conexao.php";
+   require_once "ConexaoBD/Conexao.php";
    
    $artigo = new Artigo($mysql);
    $artigo = $artigo->exibirTodos();
