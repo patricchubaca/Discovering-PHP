@@ -2,8 +2,8 @@
     require_once "ConexaoBD/Conexao.php"; 
     require_once "Controller.php";
 
-    $obj_artigo = new Artigo($mysql);
-    $artigos = $obj_artigo->encontrarPorId($_GET['id']);
+    $artigo = new Artigo($mysql);
+    $artigos = $artigo->encontrarPorId($_GET['id']);
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
