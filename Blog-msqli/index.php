@@ -22,7 +22,7 @@
     <div id="container">
         <h1> <?php echo $artigo['titulo']; ?></h1>
         <h2>
-            <a href =""><?php echo $artigo['link']; ?>
+            <a href ="./admin/adicionar-artigo.html"><?php echo $artigo['link']; ?>
             </a>
         </h2>
         <p><?php echo $artigo['conteudo'] ?></p>
