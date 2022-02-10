@@ -22,7 +22,7 @@
     <div id="container">
    
         <h2>
-            <a href ="artigo.php">   
+            <a href ="artigoNovo.php">   
                 <h1> <?php echo $artigo['titulo']; ?></h1>
             </a>
         </h2>
