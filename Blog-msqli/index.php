@@ -20,9 +20,10 @@
 <body>
     <?php foreach($artigos as $artigo){ ?>
     <div id="container">
-        <h1> <?php echo $artigo['titulo']; ?></h1>
+  
         <h2>
-            <a href ="./admin/adicionar-artigo.html"><?php echo $artigo['link']; ?>
+            <a href ="<?php echo $artigo['link']; ?>" >   
+                <h1> <?php echo $artigo['titulo']; ?></h1>
             </a>
         </h2>
         <p><?php echo $artigo['conteudo'] ?></p>
