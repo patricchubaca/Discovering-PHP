@@ -23,6 +23,7 @@ class Artigo
         $selecionaArtigo->bind_param('s', $id);
         $selecionaArtigo->execute();
         $artigos = $selecionaArtigo->get_result()->fetch_assoc();
+        
         return $artigos;
     }
   }
