@@ -1,9 +1,10 @@
 <?php
+   require_once "ConexaoBD/Conexao.php"; 
    require_once "Controller.php";
-   require_once "ConexaoBD/Conexao.php";
+   
    
    $artigo = new Artigo($mysql);
-   $artigo = $artigo->exibirTodos();
+   $artigos = $artigo->exibirTodos();
 
 ?>
 
@@ -22,7 +23,8 @@
     <div id="container">
    
         <h2>
-            <a href ="artigoNovo.php">   
+            <a href ="artigoNovo.php?id=<?php echo $artigo['id'];?>
+             ">   
                 <h1> <?php echo $artigo['titulo']; ?></h1>
             </a>
         </h2>

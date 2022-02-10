@@ -1,23 +1,24 @@
 <?php
 
-class  Artigo 
+
+class Artigo
 {
     private $mysql;
 
     public function __construct(mysqli $mysql)
     {
         $this->mysql = $mysql;
-    } 
+    }
 
-    public function exibirTodos():array{
+    public function exibirTodos(): array
+    {
 
-    $resultados = $this->mysql->query('SELECT * FROM artigos');
-    $artigos = $resultados->fetch_all(MYSQLI_ASSOC);
+        $resultado = $this->mysql->query('SELECT id, titulo, conteudo FROM artigos');
+        $artigos = $resultado->fetch_all(MYSQLI_ASSOC);
 
         return $artigos;
     }
-}
-
+  }
 
 
  

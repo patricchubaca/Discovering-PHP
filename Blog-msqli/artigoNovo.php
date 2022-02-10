@@ -1,3 +1,8 @@
+<?php
+    require_once "ConexaoBD/Conexao.php"; 
+    require_once "Controller.php";
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
