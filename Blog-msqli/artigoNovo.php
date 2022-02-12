@@ -4,6 +4,12 @@
 
     $artigo = new Artigo($mysql);
     $artigos = $artigo->encontrarPorId($_GET['id']);
+
+
+echo "<pre>";
+var_dump($artigos);
+echo "</pre>";
+file_put_contents('/tmp/debugPatric', date('H:i:s').print_r($artigos, 1)."\n", FILE_APPEND);
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

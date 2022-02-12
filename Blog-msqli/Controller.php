@@ -10,6 +10,10 @@ class Artigo
         $this->mysql = $mysql;
     }
 
+    public function saveArticle(){
+        
+    }
+
     public function exibirTodos(): array
     {
         $resultado = $this->mysql->query('SELECT id, titulo, conteudo, cargaHoraria FROM artigos');
@@ -26,6 +30,11 @@ class Artigo
         
         return $artigos;
     }
+    public function deletePorId(){
+
+    }
+
+  
   }
 
 
