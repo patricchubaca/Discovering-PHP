@@ -7,10 +7,6 @@
         $artigos = $artigo->addsArtigo($_POST['titulo'], $_POST['conteudo'], $_POST['carga']);
         
         file_put_contents('/tmp/degubPatric', date('H:i:s').print_r($artigos, 1)."\n", FILE_APPEND);
-
-
-
-        
      }
     
 ?>
