@@ -42,7 +42,7 @@ class Artigo
     {
 
     }
-    public function dropId(string $id):void
+    public function dropId(string $id): void
     {
         $dropId = $this->mysql->prepare('DELETE FROM artigos WHERE id = ?');
         $dropId->bind_param('s', $id);
