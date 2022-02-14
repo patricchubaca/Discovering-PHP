@@ -46,6 +46,10 @@ INSERT INTO `artigos` (`id`, `titulo`, `conteudo`,`cargaHoraria`) VALUES
 (2, 'Praticando para a Olimpíada Brasileira de Informática', 'Quando eu era mais novo, na época do segundo ano do ensino médio, estava decidido a fazer um curso técnico. Na época, estava indeciso entre dois cursos técnicos: química ou informática. Acabei optando por informática e gostei muito do curso. A parte que mais chamou minha atenção foi a parte de programação.','2020-12-01 12:32'),
 (3, 'O que é Metodologia Ágil?', 'Uma vez fui contratada por uma empresa que desenvolvia softwares e aplicativos para outras empresas. Nela, um dos meus primeiros trabalhos era auxiliar no desenvolvimento de um aplicativo que visa permitir que as pessoas encontrem restaurantes baratos perto de onde ela se encontra.','2020-12-01 12:32');
 
+UPDATE artigos SET  conteudo = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.', cargaHoraria = '2023-12-01 52:32 ';
+--> :C
+UPDATE artigos SET  conteudo = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.', cargaHoraria = '2022-12-01 32:72 ' WHERE ID = 6;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
