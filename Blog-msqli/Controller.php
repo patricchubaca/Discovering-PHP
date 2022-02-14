@@ -10,9 +10,12 @@ class Artigo
         $this->mysql = $mysql;
     }
 
-    public function saveArticle()
+    public function saveArticle(string $titulo, string $conteudo, string $carga): void
     {
+        $selecionaArtigo = $this->mysql->prepare('INSERT INTO artigos  (titulo, conteudo, cargaHoraria ) VALUES(?,?,?);');
+        $selecionaArtigo->bind_param('sss', $titulo, $conteudo, $carga);
         
+        $selecionaArtigo->execute();        
     }
 
     public function exibirTodos(): array
@@ -30,13 +33,6 @@ class Artigo
         $artigos = $selecionaArtigo->get_result()->fetch_assoc();
         
         return $artigos;
-    }
-    public function addsArtigo(string $titulo, string $conteudo, string $carga): void
-    {
-        $selecionaArtigo = $this->mysql->prepare('INSERT INTO artigos  (titulo, conteudo, cargaHoraria ) VALUES(?,?,?);');
-        $selecionaArtigo->bind_param('sss', $titulo, $conteudo, $carga);
-        
-        $selecionaArtigo->execute();        
     }
     public function editArticle(string $id)
     {
