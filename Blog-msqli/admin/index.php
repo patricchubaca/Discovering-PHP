@@ -28,21 +28,6 @@
                 </nav>
         </div>
         <?php } ?>
-            <div id="artigo-admin">
-                <p>O que é Metodologia Ágil?</p>
-                <nav>
-                    <a class="botao" href="admin/editar-artigo.html">Editar</a>
-                    <a class="botao" href="admin/excluir-artigo.html">Excluir</a>
-                </nav>
-            </div>
-            <div id="artigo-admin">
-                <p>Como é o funil do Growth Hacking?</p>
-                <nav>
-                    <a class="botao" href="admin/editar-artigo.html">Editar</a>
-                    <a class="botao" href="admin/excluir-artigo.html">Excluir</a>
-                </nav>
-            </div>
-        </div>
         <a class="botao botao-block" href="adicionar-artigo.html">Adicionar Artigo</a>
     </div>
 </body>
