@@ -36,8 +36,9 @@ class Artigo
     }
     public function addsArtigo(string $titulo, string $conteudo, string $carga): void
     {
-        $selecionaArtigo = $this->mysql->prepare('INSERT INTO artigos  (titulo, conteudo,cargaHoraria ) VALUES(?,?,?);');
+        $selecionaArtigo = $this->mysql->prepare('INSERT INTO artigos  (titulo, conteudo, cargaHoraria ) VALUES(?,?,?);');
         $selecionaArtigo->bind_param('sss', $titulo, $conteudo, $carga);
+        
         $selecionaArtigo->execute();        
     }
     public function editArticle(string $id)
