@@ -34,7 +34,7 @@ class Artigo
         
         return $artigos;
     }
-    public function editArticle(string $id)
+    public function editArticle(string $id):void
     {
 
     }
