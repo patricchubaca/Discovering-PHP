@@ -2,7 +2,6 @@
    require_once "ConexaoBD/Conexao.php"; 
    require_once "Controller.php";
    
-   
    $artigo = new Artigo($mysql);
    $artigos = $artigo->exibirTodos();
 
