@@ -31,9 +31,6 @@ class Artigo
         
         return $artigos;
     }
-    public function dropId(string $id){
-
-    }
     public function addsArtigo(string $titulo, string $conteudo, string $carga): void
     {
         $selecionaArtigo = $this->mysql->prepare('INSERT INTO artigos  (titulo, conteudo, cargaHoraria ) VALUES(?,?,?);');
@@ -44,6 +41,12 @@ class Artigo
     public function editArticle(string $id)
     {
 
+    }
+    public function dropId(string $id):void
+    {
+        $dropId = $this->mysql->prepare('DELETE FROM artigos WHERE id = ?');
+        $dropId->bind_param('s', $id);
+        $dropId->execute();
     }
   
   }

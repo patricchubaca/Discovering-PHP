@@ -20,7 +20,6 @@
 <body>
     <?php foreach($artigos as $artigo){ ?>
     <div id="container">
-   
         <h2>
             <a href ="artigoNovo.php?id=<?php echo $artigo['id'];?>
              ">   

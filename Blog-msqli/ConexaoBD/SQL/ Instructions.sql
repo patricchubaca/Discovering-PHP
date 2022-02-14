@@ -50,6 +50,7 @@ UPDATE artigos SET  conteudo = 'Lorem Ipsum is simply dummy text of the printing
 --> :C
 UPDATE artigos SET  conteudo = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.', cargaHoraria = '2022-12-01 32:72 ' WHERE ID = 6;
 
+DELETE FROM artigos Where conteudo  = ' ';
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
