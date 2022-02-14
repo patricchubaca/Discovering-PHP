@@ -1,8 +1,5 @@
 <?php
-    echo "<pre>";
-        //var_dump($_GET('id'));
-        var_dump( $_GET['id']);
-    echo "<pre>";
+
     require_once "../ConexaoBD/Conexao.php"; 
     require_once "../Controller.php";
   
