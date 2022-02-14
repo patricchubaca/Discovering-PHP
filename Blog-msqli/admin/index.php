@@ -26,7 +26,6 @@
                     <a class="botao" href="admin/editar-artigo.html">Editar</a>
                     <a class="botao" href="admin/excluir-artigo.html">Excluir</a>
                 </nav>
-      
         </div>
         <?php } ?>
             <div id="artigo-admin">
