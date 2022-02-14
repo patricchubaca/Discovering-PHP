@@ -30,10 +30,15 @@ class Artigo
         
         return $artigos;
     }
-    public function deletePorId(){
+    public function deletePorId(string $id){
 
     }
+    public function addsArtigo(){
 
+    }
+    public function editArticle(string $id){
+
+    }
   
   }
 
