@@ -5,9 +5,7 @@
      if ($_SERVER['REQUEST_METHOD'] === 'POST')
      {
             $artigo = new Artigo($mysql);
-            $artigos = $artigo->saveArticle($_POST['titulo'], $_POST['conteudo'], $_POST['carga']);
-            
-            file_put_contents('/tmp/degubPatric', date('H:i:s').print_r($artigos, 1)."\n", FILE_APPEND);
+            $artigo->saveArticle($_POST['titulo'], $_POST['conteudo'], $_POST['carga']);
      }
     
 ?>
