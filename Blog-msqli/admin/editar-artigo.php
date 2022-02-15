@@ -1,4 +1,5 @@
 <?php
-$_SERVER($_GET['id']);
+
+echo $_GET['id']; 
 
 ?>

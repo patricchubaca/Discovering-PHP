@@ -1,6 +1,5 @@
 <?php
 
-
 class Artigo
 {
     private $mysql;
@@ -34,7 +33,7 @@ class Artigo
         
         return $artigos;
     }
-    public function editArticle(string $id):void
+    public function editArticle(string $id): void
     {
 
     }
