@@ -9,8 +9,7 @@
             $artigo = new Artigo($mysql);
             $artigo->editar($_POST['id'], $_POST['titulo'], $_POST['conteudo'], $_POST['cargaHoraria']);
 
-            redireciona('/admin/index.php');
-            
+            redireciona('/admin/index.php');   
         }
 
             $editeArticle = new Artigo($mysql);
