@@ -19,7 +19,8 @@ Algumas instruções caso você tenha interesse de executar este projeto com um 
 	Assim, você só vai precisar do MySQL Server como base de dados e pode rodar o dump que esta disponivel no projeto junto na pasta ConexaoBD/SQL/Instructions.sql
 	   	
 	
-	Aqui é onde você colocar uma porta.Você pode mudar caso já tenha algo sendo executado 
+	Aqui é onde você colocar uma porta.
+	Você pode mudar caso já tenha algo sendo executado 
 	porta = 8080;
 	  
 	php -S localhost:$porta 	
@@ -38,7 +39,6 @@ Algumas instruções caso você tenha interesse de executar este projeto com um 
     Instruções para acessar o banco
 	mysql -h localhost -u root -p
 	  - Comando para selecionar o database - USE BLOG;
-
 
 
     COMANDO PARA ATIVIDADES NO LINUX  
