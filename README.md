@@ -2,11 +2,7 @@
 
 Repositório para pratica da Linguaguem PHP
 
-<<<<<<< HEAD
     Linux Ubunto,VS Code, GIT, PHP7* e MySQL Server
-=======
-Linux Ubunto,VS Code, GIT, PHP7* e MySQL Server
->>>>>>> 7f400f4d9212e38f8e0270383ebad175a026a8c1
 
 
 DOCUMENTAÇÃO INICIAL   
