@@ -17,7 +17,7 @@ Levando em consideração que você tenha o PHP instalado você pode usar o prop
 Acesse o diretório que tem o arquivo index.php e inicie o servidor.
 Assim, você só vai precisar do MySQL Server como base de dados e pode rodar o dump que esta disponivel no projeto junto na pasta:
 
-  ConexaoBD/SQL/Instructions.sql
+	ConexaoBD/SQL/Instructions.sql
 	
   Caso você tenha o Vim instalado e queira abrir o dump para fazer a cópia utilize o comando :
   	
