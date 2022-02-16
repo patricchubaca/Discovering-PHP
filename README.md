@@ -10,7 +10,7 @@
  Caso você tenha interesse em clonar este repositório
  Você deve utilizar o comando git mais a url :
  
-    	- git clone https://github.com/patricchubaca/Discovering-PHP.git 
+ 	git clone https://github.com/patricchubaca/Discovering-PHP.git 
 
 ### EXECUÇÃO DO PROJETO PELO SERVIDOR IMBUTIDO DO PHP 
 
