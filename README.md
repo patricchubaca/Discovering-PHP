@@ -3,22 +3,22 @@
 # Discovering-PHP
 ##### Algumas instruções caso você tenha interesse de executar este projeto com um SO Linux Ubunto com o PHP. 
 
-Caso você tenha interesse em clonar este repositório
-Você deve utilizar o comando git mais a url :
-  Caso você não tenha o git, instale o git com o seguinte comando. 
+	Caso você tenha interesse em clonar este repositório
+	Você deve utilizar o comando git mais a url :
+	Caso você não tenha o git, instale o git com o seguinte comando. 
  
-  sudo apt install git
+ 	 sudo apt install git
 
-    - git clone https://github.com/patricchubaca/Discovering-PHP.git 
- 	
-EXECUÇÃO DO PROJETO PELO SERVIDOR IMBUTIDO DO PHP 
-	
-Levando em consideração que você tenha o PHP instalado 
-você pode usar o proprio servidor do PHP para ler o projeto.
-Acesse o diretório que tem o arquivo index.php e inicie o servidor.
-Assim, você só vai precisar do MySQL Server como base de dados
-e pode rodar o dump que esta disponivel no projeto junto na
-pasta ConexaoBD/SQL/Instructions.sql
+    	- git clone https://github.com/patricchubaca/Discovering-PHP.git 
+
+	EXECUÇÃO DO PROJETO PELO SERVIDOR IMBUTIDO DO PHP 
+
+	Levando em consideração que você tenha o PHP instalado 
+	você pode usar o proprio servidor do PHP para ler o projeto.
+	Acesse o diretório que tem o arquivo index.php e inicie o servidor.
+	Assim, você só vai precisar do MySQL Server como base de dados
+	e pode rodar o dump que esta disponivel no projeto junto na
+	pasta ConexaoBD/SQL/Instructions.sql
 	
 	Aqui é onde você colocar uma porta.
 	Você pode mudar caso já tenha algo sendo executado 
