@@ -10,7 +10,7 @@ DOCUMENTAÇÃO INICIAL
 Algumas instruções caso você tenha interesse de executar este projeto com um SO Linux Ubunto com o PHP. 
 
 	Caso você tenha interesse em clonar este repositório você deve utilizar o comando git mais a url :
- 	git clone https://github.com/patricchubaca/Discovering-PHP.git 
+ 	* git clone https://github.com/patricchubaca/Discovering-PHP.git 
  	
  	Este é um repositório com alguns projetos praticando PHP com conexão MySQLI e PDO 
  	
