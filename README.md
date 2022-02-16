@@ -1,13 +1,13 @@
 # Discovering-PHP
 
-Repositório para pratica da Linguaguem PHP
+#### Repositório para pratica da Linguaguem PHP
 
-Linux Ubunto,VS Code, GIT, PHP7* e MySQL Server
+#### Linux Ubunto,VS Code, GIT, PHP7* e MySQL Server
 
 
 ## DOCUMENTAÇÃO INICIAL   
 
-### Algumas instruções caso você tenha interesse de executar este projeto com um SO Linux Ubunto com o PHP. 
+#### Algumas instruções caso você tenha interesse de executar este projeto com um SO Linux Ubunto com o PHP. 
 
 	Caso você tenha interesse em clonar este repositório você deve utilizar o comando git mais a url :
  	  -git clone https://github.com/patricchubaca/Discovering-PHP.git 
