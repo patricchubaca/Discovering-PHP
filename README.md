@@ -19,11 +19,15 @@ Assim, você só vai precisar do MySQL Server como base de dados e pode rodar o 
 
 	ConexaoBD/SQL/Instructions.sql
 	
+  Caso você tenha o Vim instalado e queira abrir o dump para fazer a cópia utilize o comando :
+  	
+	vim ConexaoBD/SQL/Instructions.sql
+	
 Para executar o projeto você pode usar o servidor do proprio PHP com uma porta disponivel.
  Você pode mudar caso já tenha algo sendo executado 
 	
-  - Simulação do numero da porta
-  $porta = 8080;
+  Simulação do numero da porta
+    $porta = 8080;
 	  
   php -S localhost:$porta 	
 	  
