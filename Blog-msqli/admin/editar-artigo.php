@@ -7,7 +7,9 @@
         if ($_SERVER['REQUEST_METHOD'] === 'POST')
         {
             $artigo = new Artigo($mysql);
-            $artigo->editar($_POST['id'], $_POST['titulo'], $_POST['conteudo'], $_POST['cargaHoraria']);
+            $debugArticle = $artigo->editar($_POST['id'], $_POST['titulo'], $_POST['conteudo'], $_POST['cargaHoraria']);
+
+            file_put_contents('/tmp/debugPatric', date('H:i:s').print_r($debugArticle, 1)."\n", FILE_APPEND);
 
             redireciona('/admin/index.php');   
         }
