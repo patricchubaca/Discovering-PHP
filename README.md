@@ -49,29 +49,26 @@
 
     COMANDO PARA ATIVIDADES NO LINUX  
 
-    CRIANDO ARQUIVO 
-	
+    	CRIANDO ARQUIVO 
 	touch /tmp/debugPatric
 	
 	PERMISÃO DE LEITURA E ESCRITA
-
 	chmdod 666 /tmp/debugPatric
 
 	ESCREVE AS ULTIMAS 10 LINHAS DO ARQUIVO 
-
 	tail -f /tmp/debugPatric
 
-	Metodo PHP para debug 
+	Metodo PHP para debug e leitura de Objetos e Strings
 	
-	  Debug de Arrays e Obijetos 
-	  file_put_contents('/tmp/degubPatric', date('H:i:s').print_r($lista, 1)."\n", FILE_APPEND);
+	Debug de Arrays e Obijetos 
+	file_put_contents('/tmp/degubPatric', date('H:i:s').print_r($lista, 1)."\n", FILE_APPEND);
 	  
-	  Debug de Strings 			
-	  file_put_contents('/tmp/degubPatric', date('H:i:s'). "$conteudo\n", FILE_APPEND);
+	Debug de Strings 			
+	file_put_contents('/tmp/degubPatric', date('H:i:s'). "$conteudo\n", FILE_APPEND);
 
 
 	echo "<pre>";
-	  var_dump($lista);
+	var_dump($lista);
 	echo "</pre>";
 
 
