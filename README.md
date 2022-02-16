@@ -13,7 +13,7 @@
 	 Você deve utilizar o comando git mais a url :
 	 	 Caso você não tenha o git, instale o git com o seguinte comando. 
 		 
-		   ``sudo apt install git``
+		   sudo apt install git
 
  	  - git clone https://github.com/patricchubaca/Discovering-PHP.git 
  	
