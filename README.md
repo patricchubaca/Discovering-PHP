@@ -3,9 +3,9 @@
 # Discovering-PHP
 ##### Algumas instruções caso você tenha interesse de executar este projeto com um SO Linux Ubunto com o PHP. 
 
-	Caso você tenha interesse em clonar este repositório
-	Você deve utilizar o comando git mais a url :
-	Caso você não tenha o git, instale o git com o seguinte comando. 
+###### Caso você tenha interesse em clonar este repositório
+###### Você deve utilizar o comando git mais a url :
+###### Caso você não tenha o git, instale o git com o seguinte comando. 
  
  	 sudo apt install git
 
