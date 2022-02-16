@@ -5,65 +5,70 @@ Repositório para pratica da Linguaguem PHP
 Linux Ubunto,VS Code, GIT, PHP7* e MySQL Server
 
 
-Alguns comands caso você tenha interesse de executar este projeto com um SO Linux Ubunto com o PHP 
+* DOCUMENTAÇÃO INICIAL   
 
-Caso você tenha interesse em clonar este repositório você deve utilizar o comando git mais a url :
+	Alguns comands caso você tenha interesse de executar este projeto com um SO Linux Ubunto com o PHP 
+
+	Caso você tenha interesse em clonar este repositório você deve utilizar o comando git mais a url :
  	
-git clone https://github.com/patricchubaca/Discovering-PHP.git 
+	git clone https://github.com/patricchubaca/Discovering-PHP.git 
  	
-Este é um repositório com alguns projetos praticando PHP com conexão MySQLI e PDO 
+ 	Este é um repositório com alguns projetos praticando PHP com conexão MySQLI e PDO 
  	
 	
-EXECUÇÃO DO PROJETO PELO SERVIDOR IMBUTIDO DO PHP 
+	EXECUÇÃO DO PROJETO PELO SERVIDOR IMBUTIDO DO PHP 
 	
-Levando em consideração que você tenha o PHP instalado você pode usar o proprio servidor do PHP para ler o projeto
-Assim, você só vai precisar do MySQL Server como base de dados e pode rodar o dump que esta disponivel no projeto junto na pasta ConexaoBD/SQL/Instructions.sql
+	Levando em consideração que você tenha o PHP instalado você pode usar o proprio servidor do PHP para ler o projeto
+	Assim, você só vai precisar do MySQL Server como base de dados e pode rodar o dump que esta disponivel no projeto junto na pasta ConexaoBD/SQL/Instructions.sql
 	   	
 	
-Aqui é onde você colocar uma porta.Você pode mudar caso já tenha algo sendo executado 
-porta = 8080;
+	Aqui é onde você colocar uma porta.Você pode mudar caso já tenha algo sendo executado 
+	porta = 8080;
 	  
-php -S localhost:$porta 	
+	php -S localhost:$porta 	
 	  
-Exemplo de como vai ser executado
-php -S localhost:8080	
+	Exemplo de como vai ser executado
+    php -S localhost:8080	
 	    
 	    
-Caso você tenha o XAMPP e o MYSQL SERVER  
+    Caso você tenha o XAMPP e o MYSQL SERVER  
 
-START DO XAMPP 
+	START DO XAMPP 
 	
-sudo /opt/lampp/lampp start
+	sudo /opt/lampp/lampp start
 	
-START MYSQL SERVER 
-Instruções para acessar o banco
-mysql -h localhost -u root -p
-- Comando para selecionar o database - USE BLOG;
+	START MYSQL SERVER 
+    Instruções para acessar o banco
+	mysql -h localhost -u root -p
+	  - Comando para selecionar o database - USE BLOG;
 
-COMANDO PARA ATIVIDADES NO LINUX  
 
-CRIANDO ARQUIVO 
+
+    COMANDO PARA ATIVIDADES NO LINUX  
+
+    CRIANDO ARQUIVO 
 	
-touch /tmp/debugPatric
+	touch /tmp/debugPatric
 	
-PERMISÃO DE LEITURA E ESCRITA
+	PERMISÃO DE LEITURA E ESCRITA
 
-chmdod 666 /tmp/debugPatric
+	chmdod 666 /tmp/debugPatric
 
-ESCREVE AS ULTIMAS 10 LINHAS DO ARQUIVO 
+	ESCREVE AS ULTIMAS 10 LINHAS DO ARQUIVO 
 
-tail -f /tmp/debugPatric
+	tail -f /tmp/debugPatric
 
-Metodo PHP para debug 
+	Metodo PHP para debug 
 	
-Debug de Arrays e Obijetos 
-file_put_contents('/tmp/degubPatric', date('H:i:s').print_r($lista, 1)."\n", FILE_APPEND);
+	  Debug de Arrays e Obijetos 
+	  file_put_contents('/tmp/degubPatric', date('H:i:s').print_r($lista, 1)."\n", FILE_APPEND);
 	  
-Debug de Strings 			
-file_put_contents('/tmp/degubPatric', date('H:i:s'). "$conteudo\n", FILE_APPEND);
+	  Debug de Strings 			
+	  file_put_contents('/tmp/degubPatric', date('H:i:s'). "$conteudo\n", FILE_APPEND);
 
-echo "<pre>";
-var_dump($lista);
-echo "</pre>";
+
+	echo "<pre>";
+	  var_dump($lista);
+	echo "</pre>";
 
 
