@@ -25,7 +25,6 @@
 	Assim, você só vai precisar do MySQL Server como base de dados
     e pode rodar o dump que esta disponivel no projeto junto na
 	pasta ConexaoBD/SQL/Instructions.sql
-	   	
 	
 	Aqui é onde você colocar uma porta.
 	Você pode mudar caso já tenha algo sendo executado 
@@ -37,7 +36,6 @@
 	Exemplo de como vai ser executado
     php -S localhost:8080	
 	    
-	    
     Caso você tenha o XAMPP e o MYSQL SERVER  
 	Você tem disponivel o arquivo 	
 		ConexaoBD/SQL/Instructions.sql 
@@ -47,7 +45,6 @@
 	 Instruções para iniciar o xampp
 	 - Caso você queira usar a interface do banco de dados
 	sudo /opt/lampp/lampp start
-
 	
 	START MYSQL SERVER 
     Instruções para acessar o banco
@@ -55,7 +52,6 @@
 	mysql -h localhost -u root -p
 
 	  - Comando para selecionar o database - USE BLOG;
-
 
     COMANDO PARA ATIVIDADES NO LINUX  
 
