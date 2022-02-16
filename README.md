@@ -3,34 +3,36 @@
 # Discovering-PHP
 ##### Algumas instruções caso você tenha interesse de executar este projeto com um SO Linux Ubunto com o PHP. 
 
- Caso você não tenha o git, instale o git com o seguinte comando : 
+ Caso você não tenha o git, instale o git com o seguinte comando: 
  
  	 sudo apt install git
 	 
- Caso tenha interesse em clonar este repositório você deve utilizar o comando git mais a url :
+ Caso tenha interesse em clonar este repositório você deve utilizar o comando git mais a url:
  
  	git clone https://github.com/patricchubaca/Discovering-PHP.git 
 
 ### EXECUÇÃO DO PROJETO PELO SERVIDOR IMBUTIDO DO PHP 
 
-	Levando em consideração que você tenha o PHP instalado 
-	você pode usar o proprio servidor do PHP para ler o projeto.
-	Acesse o diretório que tem o arquivo index.php e inicie o servidor.
-	Assim, você só vai precisar do MySQL Server como base de dados
-	e pode rodar o dump que esta disponivel no projeto junto na
-	pasta ConexaoBD/SQL/Instructions.sql
+Levando em consideração que você tenha o PHP instalado você pode usar o proprio servidor do PHP para ler o projeto.
+Acesse o diretório que tem o arquivo index.php e inicie o servidor.
+Assim, você só vai precisar do MySQL Server como base de dados e pode rodar o dump que esta disponivel no projeto junto na pasta:
+
+	ConexaoBD/SQL/Instructions.sql
 	
-	Aqui é onde você colocar uma porta.
-	Você pode mudar caso já tenha algo sendo executado 
-	- Simulação do numero da porta
-	$porta = 8080;
+Para executar o projeto você pode usar o servidor do proprio PHP com uma porta disponivel.
+ Você pode mudar caso já tenha algo sendo executado 
+	
+  - Simulação do numero da porta
+  $porta = 8080;
 	  
-	php -S localhost:$porta 	
+  php -S localhost:$porta 	
 	  
-	Exemplo de como vai ser executado
-    	php -S localhost:8080	
+  Exemplo de como vai ser executado
+    	
+	php -S localhost:8080	
 	    
-    	Caso você tenha o XAMPP e o MYSQL SERVER  
+Caso você tenha o XAMPP e o MYSQL SERVER  
+
 	Você tem disponivel o arquivo 	
 		ConexaoBD/SQL/Instructions.sql 
 	para rodar o sql para criação da base de dados.
