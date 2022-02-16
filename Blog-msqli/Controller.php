@@ -37,7 +37,7 @@ class Artigo
     public function editar(string $id, string $titulo, string $conteudo, string $cargaHoraria): void
     {
         $editaArtigo = $this->mysql->prepare('UPDATE artigos SET titulo = ?, conteudo = ?, cargaHoraria = ? WHERE id = ?');
-        $editaArtigo->bind_param('ssss', $titulo, $conteudo, $cargaHoraria,$id);
+        $editaArtigo->bind_param('ssss', $titulo, $conteudo, $cargaHoraria, $id);
         $editaArtigo->execute();
     }
     public function dropId(string $id): void
