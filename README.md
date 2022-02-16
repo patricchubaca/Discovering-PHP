@@ -2,10 +2,10 @@
 
 Repositório para pratica da Linguaguem PHP
 
-# Linux Ubunto,VS Code, GIT, PHP7* e MySQL Server
+Linux Ubunto,VS Code, GIT, PHP7* e MySQL Server
 
 
-# DOCUMENTAÇÃO INICIAL   
+DOCUMENTAÇÃO INICIAL   
 
 Alguns comands caso você tenha interesse de executar este projeto com um SO Linux Ubunto com o PHP 
 
