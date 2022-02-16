@@ -1,9 +1,5 @@
 
 
-#### Repositório para pratica da Linguaguem PHP
-
-#### Linux Ubunto,VS Code, GIT, PHP7* e MySQL Server
-
 # Discovering-PHP
 ##### Algumas instruções caso você tenha interesse de executar este projeto com um SO Linux Ubunto com o PHP. 
 
