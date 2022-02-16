@@ -21,7 +21,8 @@
 	
 	Aqui é onde você colocar uma porta.
 	Você pode mudar caso já tenha algo sendo executado 
-	porta = 8080;
+	- Simulação do numero da porta
+	$porta = 8080;
 	  
 	php -S localhost:$porta 	
 	  
