@@ -31,7 +31,7 @@ Você pode mudar caso já tenha algo sendo executado
 	  
   php -S localhost:$porta 	
 	  
-  Exemplo de como vai ser executado
+  Exemplo de como vai ser executado :
     	
 	php -S localhost:8080	
 	    
