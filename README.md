@@ -5,9 +5,9 @@ Repositório para pratica da Linguaguem PHP
 Linux Ubunto,VS Code, GIT, PHP7* e MySQL Server
 
 
-DOCUMENTAÇÃO INICIAL   
+## DOCUMENTAÇÃO INICIAL   
 
-Algumas instruções caso você tenha interesse de executar este projeto com um SO Linux Ubunto com o PHP. 
+### Algumas instruções caso você tenha interesse de executar este projeto com um SO Linux Ubunto com o PHP. 
 
 	Caso você tenha interesse em clonar este repositório você deve utilizar o comando git mais a url :
  	  -git clone https://github.com/patricchubaca/Discovering-PHP.git 
@@ -33,7 +33,9 @@ Algumas instruções caso você tenha interesse de executar este projeto com um 
 
 	START DO XAMPP 
 	
-	sudo /opt/lampp/lampp start
+	sudo /opt/lampp/lampp startdos e pode rodar o dump que esta disponivel no projeto junto na pasta ConexaoBD/SQL/Instructions.sql
+   	
+
 	
 	START MYSQL SERVER 
     Instruções para acessar o banco
