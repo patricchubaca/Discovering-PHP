@@ -13,7 +13,7 @@
 	 Você deve utilizar o comando git mais a url :
 	 	 Caso você não tenha o git, instale o git com o seguinte comando.
 		   sudo apt install git
-		   
+
  	  - git clone https://github.com/patricchubaca/Discovering-PHP.git 
  	
 	
@@ -39,7 +39,9 @@
 	    
 	    
     Caso você tenha o XAMPP e o MYSQL SERVER  
-	Você tem disponivel o arquivo 	ConexaoBD/SQL/Instructions.sql para rodar o sql para criação da base de dados.
+	Você tem disponivel o arquivo 	
+		ConexaoBD/SQL/Instructions.sql 
+	para rodar o sql para criação da base de dados.
 
 	START DO XAMPP 
 	 Instruções para iniciar o xampp
