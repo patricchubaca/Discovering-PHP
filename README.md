@@ -11,7 +11,7 @@
  
  	git clone https://github.com/patricchubaca/Discovering-PHP.git 
 
-### EXECUÇÃO DO PROJETO PELO SERVIDOR IMBUTIDO DO PHP 
+### Execução do projeto pelo servidor do proprio PHP 
 
 Levando em consideração que você tenha o PHP instalado você pode usar o proprio servidor do PHP para ler o projeto.
 Acesse o diretório que tem o arquivo index.php e inicie o servidor.
