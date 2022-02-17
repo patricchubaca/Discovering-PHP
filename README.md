@@ -85,6 +85,7 @@ Debug de Strings
 	
 	file_put_contents('/tmp/degubPatric', date('H:i:s'). "$conteudo\n", FILE_APPEND);
 
+Debug de Objetos e Arrays diretamente na tela
 
 	echo "<pre>";
 	var_dump($lista);
