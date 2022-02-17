@@ -54,7 +54,7 @@ Instruções para iniciar o xampp
         
 	Instruções para acessar o banco
 	- Caso você queira usar a o banco de dados via linha de comando
-	mysql -h localhost -u root -p
+		mysql -h localhost -u root -p
 
 	- Comando para selecionar o database - USE BLOG;
 
