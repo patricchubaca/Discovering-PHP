@@ -46,36 +46,37 @@ Você tem disponivel o arquivo para rodar o sql para criação da base de dados.
 ### START DO XAMPP 
 	
 Instruções para iniciar o xampp
-- Caso você queira usar a interface do banco de dados
+- Caso você queira usar a interface do banco de dados:
 	 	
 		sudo /opt/lampp/lampp start
 
 ### START MYSQL SERVER 
         
 	Instruções para acessar o banco
-	- Caso você queira usar a o banco de dados via linha de comando
-		mysql -h localhost -u root -p
+	- Caso você queira usar a o banco de dados via linha de comando:
+		  mysql -h localhost -u root -p
 
-	- Comando para selecionar o database - USE BLOG;
+		- Comando para selecionar o database - USE BLOG;
 
 ### COMANDO PARA ATIVIDADES NO LINUX  
 
-    	CRIANDO ARQUIVO 
-	touch /tmp/debugPatric
+    	CRIANDO ARQUIVO
+	
+		  touch /tmp/debugPatric
 	
 	PERMISÃO DE LEITURA E ESCRITA
-	chmdod 666 /tmp/debugPatric
+		  chmdod 666 /tmp/debugPatric
 
 	ESCREVE AS ULTIMAS 10 LINHAS DO ARQUIVO 
-	tail -f /tmp/debugPatric
+		  tail -f /tmp/debugPatric
 
 	Metodo PHP para debug e leitura de Objetos e Strings
 	
 	Debug de Arrays e Obijetos 
-	file_put_contents('/tmp/degubPatric', date('H:i:s').print_r($lista, 1)."\n", FILE_APPEND);
+		  file_put_contents('/tmp/degubPatric', date('H:i:s').print_r($lista, 1)."\n", FILE_APPEND);
 	  
 	Debug de Strings 			
-	file_put_contents('/tmp/degubPatric', date('H:i:s'). "$conteudo\n", FILE_APPEND);
+		  file_put_contents('/tmp/degubPatric', date('H:i:s'). "$conteudo\n", FILE_APPEND);
 
 
 	echo "<pre>";
