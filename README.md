@@ -75,7 +75,7 @@ ESCREVE AS ULTIMAS 10 LINHAS DO ARQUIVO
 		  
  	tail -f /tmp/debugPatric
 
-Metodo PHP para debug e leitura de Objetos e Strings
+### Metodo PHP para debug e leitura de Objetos e Strings
 	
 Debug de Arrays e Obijetos 
 		  
