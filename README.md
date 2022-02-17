@@ -47,7 +47,8 @@ Você tem disponivel o arquivo para rodar o sql para criação da base de dados.
 	
 Instruções para iniciar o xampp
 - Caso você queira usar a interface do banco de dados
-	 	sudo /opt/lampp/lampp start
+	 	
+		sudo /opt/lampp/lampp start
 
 ### START MYSQL SERVER 
         
