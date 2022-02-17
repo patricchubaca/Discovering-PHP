@@ -45,9 +45,9 @@ Você pode mudar caso já tenha algo sendo executado
 
 ### START DO XAMPP 
 	
-######Instruções para iniciar o xampp
-######- Caso você queira usar a interface do banco de dados
-	sudo /opt/lampp/lampp start
+###### Instruções para iniciar o xampp
+###### - Caso você queira usar a interface do banco de dados
+	 sudo /opt/lampp/lampp start
 
 ### START MYSQL SERVER 
         
