@@ -37,19 +37,19 @@ Você pode mudar caso já tenha algo sendo executado
     	
 	php -S localhost:8080	
 	    
-Caso você tenha o XAMPP e o MYSQL SERVER  
+### Caso você tenha o XAMPP e o MYSQL SERVER  
 
 	Você tem disponivel o arquivo 	
 		ConexaoBD/SQL/Instructions.sql 
 	para rodar o sql para criação da base de dados.
 
-	START DO XAMPP 
+### START DO XAMPP 
 	
 	 Instruções para iniciar o xampp
 	 - Caso você queira usar a interface do banco de dados
 	sudo /opt/lampp/lampp start
-	
-	START MYSQL SERVER 
+
+### START MYSQL SERVER 
         
 	Instruções para acessar o banco
 	- Caso você queira usar a o banco de dados via linha de comando
@@ -57,7 +57,7 @@ Caso você tenha o XAMPP e o MYSQL SERVER
 
 	- Comando para selecionar o database - USE BLOG;
 
-    	COMANDO PARA ATIVIDADES NO LINUX  
+### COMANDO PARA ATIVIDADES NO LINUX  
 
     	CRIANDO ARQUIVO 
 	touch /tmp/debugPatric
