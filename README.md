@@ -57,7 +57,7 @@ Instruções para acessar o banco
 		  
 		  mysql -h localhost -u root -p
 
-		- Comando para selecionar o database:
+- Comando para selecionar o database:
 		
 		- USE BLOG;
 
