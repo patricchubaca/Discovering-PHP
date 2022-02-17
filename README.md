@@ -59,13 +59,13 @@ Instruções para acessar o banco
 
 - Comando para selecionar o database:
 		
-		- USE BLOG;
+		 USE BLOG;
 
 ### COMANDO PARA ATIVIDADES NO LINUX  
 
-    	CRIANDO ARQUIVO
+CRIANDO ARQUIVO
 	
-		  touch /tmp/debugPatric
+		touch /tmp/debugPatric
 	
 	PERMISÃO DE LEITURA E ESCRITA
 		  chmdod 666 /tmp/debugPatric
