@@ -23,15 +23,15 @@ Assim, você só vai precisar do MySQL Server como base de dados e pode rodar o 
   	
 	vim ConexaoBD/SQL/Instructions.sql
 	
-Para executar o projeto você pode usar o servidor do proprio PHP com uma porta disponivel.
+### Para executar o projeto você pode usar o servidor do proprio PHP com uma porta disponivel.
 
 Você pode mudar caso já tenha algo sendo executado 
 	
   Simulação do numero da porta
   
-  $porta = 8080;
+  	$porta = 8080;
 	  
-  php -S localhost:$porta 	
+  	php -S localhost:$porta 	
 	  
   Exemplo de como vai ser executado :
     	
