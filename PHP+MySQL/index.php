@@ -21,10 +21,9 @@
   </form>
 
   <?php
-  require_once "recuperaDado.php";
-  echo '<pre>';
-  print_r($lista);
-  echo '</pre>';
+  require_once ('./vendor/autoload.php');
+
+  echo "Teste";
 
   ?>
 </body>
