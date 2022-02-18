@@ -1,11 +1,15 @@
 <?php
      require_once "../ConexaoBD/Conexao.php"; 
      require_once "../Controller.php";
+     require_once "../src/redireciona.php";
      
      if ($_SERVER['REQUEST_METHOD'] === 'POST')
      {
             $artigo = new Artigo($mysql);
             $artigo->saveArticle($_POST['titulo'], $_POST['conteudo'], $_POST['carga']);
+
+
+            redireciona('/admin/index.php'); 
      }
     
 ?>

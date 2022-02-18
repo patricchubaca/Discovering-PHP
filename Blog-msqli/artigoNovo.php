@@ -4,6 +4,7 @@
 
     $artigo = new Artigo($mysql);
     $artigos = $artigo->encontrarPorId($_GET['id']);
+    
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
