@@ -40,6 +40,8 @@ Você pode mudar caso já tenha algo sendo executado
 ### Caso você tenha o XAMPP e o MYSQL SERVER  
 
 Você tem disponivel o arquivo para rodar o sql para criação da base de dados.
+
+
 		ConexaoBD/SQL/Instructions.sql 
 
 
