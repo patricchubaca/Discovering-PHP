@@ -1,0 +1,11 @@
+{
+    "name": "patric/phpmysql",
+    "description": "Projeto para teste do PHP",
+    "authors": [
+        {
+            "name": "Patric Enderson",
+            "email": "patric_job@outlook.com"
+        }
+    ],
+    "require": {}
+}
