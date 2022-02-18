@@ -22,11 +22,13 @@
 
   <?php
 
-  use src\Database\Database;
+  use src\Database\ConexaoDB;
 
   require_once ('./vendor/autoload.php');
 
-  $bd = new Database();
+  $bd = new conexaoDB();
+
+
 
   ?>
 </body>
