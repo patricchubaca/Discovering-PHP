@@ -7,5 +7,10 @@
             "email": "patric_job@outlook.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "src\\":"src/"
+        }
+    } 
 }
