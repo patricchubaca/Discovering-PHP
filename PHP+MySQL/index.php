@@ -21,9 +21,12 @@
   </form>
 
   <?php
+
+  use src\Database\Database;
+
   require_once ('./vendor/autoload.php');
 
-  echo "Teste";
+  $bd = new Database();
 
   ?>
 </body>
