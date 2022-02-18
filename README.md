@@ -27,7 +27,7 @@ Assim, você só vai precisar do MySQL Server como base de dados e pode rodar o 
 
 Você pode mudar caso já tenha algo sendo executado 
 	
-  Simulação do numero da porta
+  Simulação do numero da porta :
   
   	$porta = 8080;
 	  
