@@ -1,18 +1,17 @@
 <?php
 
-$servername = "127.0.0.1";
+$servername = "localhost";
 $username = "root";
 $password = "root";
-$dbname = "myDBPDO";
+$dbname = "teste";
 
 try {
-  $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+      $conn = new PDO("mysql:host=$servername;port=3307;dbname=$dbname", $username, $password);
+      $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-  $query = "select * from tb_cursos";
+      return $conn;
 
-  $stmt = $conn->query($query);
-  $lista = $stmt->fetchAll(PDO::FETCH_OBJ);
+
 } catch (PDOException $e) {
   echo $query .  "<br>" . $e->getMessage();
 }
