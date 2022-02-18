@@ -25,9 +25,9 @@ Assim, você só vai precisar do MySQL Server como base de dados e pode rodar o 
 	
 ### Para executar o projeto você pode usar o servidor do proprio PHP com uma porta disponivel.
 
-Você pode mudar caso já tenha algo sendo executado 
+Você pode mudar caso já tenha algo sendo executado.
 	
-  Simulação do numero da porta
+  Simulação do numero da porta :
   
   	$porta = 8080;
 	  
@@ -40,19 +40,21 @@ Você pode mudar caso já tenha algo sendo executado
 ### Caso você tenha o XAMPP e o MYSQL SERVER  
 
 Você tem disponivel o arquivo para rodar o sql para criação da base de dados.
+
+
 		ConexaoBD/SQL/Instructions.sql 
 
 
 ### START DO XAMPP 
 	
-Instruções para iniciar o xampp
+Instruções para iniciar o xampp.
 - Caso você queira usar a interface do banco de dados:
 	 	
 		sudo /opt/lampp/lampp start
 
 ### START MYSQL SERVER 
         
-Instruções para acessar o banco
+Instruções para acessar o banco.
 - Caso você queira usar a o banco de dados via linha de comando:
 		  
 		  mysql -h localhost -u root -p
