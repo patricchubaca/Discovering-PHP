@@ -22,14 +22,17 @@
 
   <?php
 
+require_once ('./vendor/autoload.php');
+
   use src\Database\ConexaoDB;
 
-  require_once ('./vendor/autoload.php');
-
-  $bd = new conexaoDB();
-
-
-
+  $conn = ConexaoDB::conectar();
+  $stmt = $conn->prepare("SELECT * FROM artigos");
+  $stmts = $stmt->execute();
+  $lista = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    
+  print_r($lista);
+  //echo $lista;
   ?>
 </body>
 
