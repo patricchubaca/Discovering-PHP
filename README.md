@@ -1,7 +1,7 @@
 
 
 # Discovering-PHP
-## Discovering-PHP+MYSQL
+## PHP + MYSQL
 ##### Algumas instruções caso você tenha interesse de executar este projeto com um SO Linux Ubunto com o PHP. 
 
  Caso você não tenha o git, instale o git com o seguinte comando: 
