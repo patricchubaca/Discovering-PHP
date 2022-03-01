@@ -1,4 +1,4 @@
 function button(){
-    alert('teste');
+    alert('Javascript');
     
 }
