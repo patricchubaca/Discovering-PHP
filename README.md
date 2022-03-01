@@ -72,7 +72,7 @@ CRIANDO ARQUIVO
 	
 PERMISÃO DE LEITURA E ESCRITA
 	
-	chmdod 666 /tmp/debugPatric
+	chmod 666 /tmp/debugPatric
 
 ESCREVE AS ULTIMAS 10 LINHAS DO ARQUIVO 
 		  
