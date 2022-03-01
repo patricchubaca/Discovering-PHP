@@ -17,21 +17,40 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script  src="/public/js/index.js"></script>
   <title>Document</title>
 </head>
 <body>
-  <h1>Formulário para cadastro</h1>
-  <form>
-    <label for="fname">Nome do curso:</label><br>
-    <input type="text" id="titulo" name="titulo" value=""><br>
-    <label for="lname">Carga horária:</label><br>
-    <input type="text" id="conteudo" name="conteudo" value=""><br>
-    <label for="lname">Descrição:</label><br>
-    <input type="text" id="cargaHoraria" name="cargaHoraria" value=""><br><br>
-    <button onclick="button()">teste</button>
-  </form>
-  
+
+  <body class="container">
+    
+    <h1 class="text-center">Cadastre-se em um Curso de Tecnologia</h1>
+    <p>Preencha os dados a baixo</p>   
+    <form class="form">
+        
+        <div class="form-group">
+            <label for="tituloCurso">Nome do curso:</label>
+            <input type="text" id="titulo" class="form-control" required autofocus/>        
+        </div>    
+        
+        <div class="form-group">
+            <label for="DescricaoCurso">Descrição</label>
+            <input type="text" id="conteudo" class="form-control" value="1" required/>
+        </div>
+        
+        <div class="form-group">
+            <label for="cargaHoraria">Carga horária:</label>
+            <input id="cargaHoraria" type="number" class="form-control"  min="0.01" step="0.01" value="0.0" required />
+        </div>
+        
+        <button class="btn btn-primary" type="submit">Incluir</button>
+    </form>
+    
+    <div class="text-center">
+        <button class="btn btn-primary text-center" type="button">
+            Apagar
+        </button>
+    </div> 
+</br>
 <table class="table table-hover">
   <thead>
     <tr>
@@ -50,7 +69,7 @@
   <?php } ?>
   </tbody>
 </table>
-
+<script src="./public/js/index.js"></script>
 </body>
 
 </html>
