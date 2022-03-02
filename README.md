@@ -66,6 +66,10 @@ Instruções para acessar o banco.
 
 ### COMANDO PARA ATIVIDADES NO LINUX  
 
+RENOMEAR ARQUIVO
+	
+	mv arquivo.txt novoArquivo.txt
+
 CRIANDO ARQUIVO
 	
 	touch /tmp/debugPatric
