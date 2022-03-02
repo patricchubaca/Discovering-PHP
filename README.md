@@ -60,9 +60,13 @@ Instruções para acessar o banco.
 		  
 		  mysql -h localhost -u root -p
 
-- Comando para selecionar o database:
+- Selecione o database:
 		
 		 USE BLOG;
+		 
+- Exibição descritiva de uma tabela :
+		
+		 DESC 'nome_tabela';
 
 ### COMANDO PARA ATIVIDADES NO LINUX  
 
