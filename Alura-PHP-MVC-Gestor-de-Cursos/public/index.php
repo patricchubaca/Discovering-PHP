@@ -8,10 +8,17 @@
 <body>
 <?php
 
-    if($_SERVER['PATH_INFO'] === '/listar-cursos'){
-        require 'listar-cursos.php';
-    } else {
-        require 'novo-curso.php';
+    switch($_SERVER['PATH_INFO']){
+        case '/listar-curso':
+            require 'listar-cursos.php';
+            break;
+        case '/adicionar-curso';
+            require 'adicionar-cursos.php';
+            break;
+        case '/novo-curso';
+            require 'novo-curso.php';
+            break;
+
     }
 
 ?>

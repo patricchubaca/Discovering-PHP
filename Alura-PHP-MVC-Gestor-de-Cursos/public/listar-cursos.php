@@ -17,6 +17,7 @@ $cursos = $repositorioDeCursos->findAll();
     <div class="jumbotron">
         <h1>Listar cursos</h1>
     </div>
+    <a href="/adicionar-cursos.php" class="btn btn-primary mb-2">Adicionar</a> 
     <ul class="list-group">
         <?php foreach ($cursos as $curso): ?>
             <li class="list-group-item">
