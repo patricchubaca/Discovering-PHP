@@ -72,7 +72,7 @@ RENOMEAR ARQUIVO
 
 CRIANDO ARQUIVO
 	
-	touch /tmp/debugPatric
+	touch arquivoNovo.extensao
 	
 PERMISÃO DE LEITURA E ESCRITA
 	
