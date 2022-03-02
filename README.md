@@ -62,7 +62,7 @@ Instruções para acessar o banco.
 
 - Selecione o database:
 		
-		 USE BLOG;
+		 USE DATABASE;
 		 
 - Exibição descritiva de uma tabela :
 		
