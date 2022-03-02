@@ -8,7 +8,18 @@
 </head>
 <body>
     <h1>CRUD</h1>
+  <?php
+    include_once "conexao.php";
+    $sql ="SELECT nome_curso, descricao_curso,carga_horaria FROM tb_cursos";
+    $sqlBusca = $conn->prepare($sql);
+    $teste = $sqlBusca->execute();
+    $listas = $sqlBusca->fetchAll(PDO::FETCH_ASSOC);
 
+  echo  "<pre>";
+  var_dump($listas);
+  echo  "</pre>";
+
+    ?>
     <table class="table">
   <thead>
     <tr>
@@ -24,18 +35,6 @@
       <td>Mark</td>
       <td>Otto</td>
       <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
     </tr>
   </tbody>
 </table>
