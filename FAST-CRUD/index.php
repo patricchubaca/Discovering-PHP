@@ -55,27 +55,18 @@
   <thead>
     <tr>
       <th scope="col">ID</th>
-      <th scope="col">Nome</th>
-      <th scope="col">Emails</th>
-      <th scope="col">Acoes</th>
+      <th scope="col">Curso</th>
+      <th scope="col">Descrição</th>
+      <th scope="col">Cargahorária</th>
+      <th scope="col">Ações</th>
     </tr>
 </thead>
-  <?php 
-      include_once "list.php";
-   ?>
-  <?php foreach($listas as $lista){ ?>
+
   <tbody>
-    <tr>
-      <td><?php echo $lista['id']; ?></td>
-      <td><?php echo $lista['nome_curso']; ?></td>
-      <td><?php echo $lista['descricao_curso']; ?></td>
-      <td><?php echo $lista['carga_horaria']; ?></td>
-      <td>vaziu</td>
-    </tr>
+
   </tbody>
-  <?php } ?>
+ 
 </table>
-
-
+<script src="index.js"></script>
 </body>
 </html>
