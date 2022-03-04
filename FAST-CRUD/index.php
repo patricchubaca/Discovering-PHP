@@ -61,9 +61,7 @@
     </tr>
 </thead>
   <?php 
-      include_once "conexao.php";
       include_once "list.php";
-  
    ?>
   <?php foreach($listas as $lista){ ?>
   <tbody>
