@@ -3,9 +3,8 @@
 
     $sql ="SELECT id, nome_curso, descricao_curso,carga_horaria FROM tb_cursos";
     $sqlBusca = $conn->prepare($sql);
+    
     $sqlBusca->execute();
-
-    ($sqlBusca);
 
     $dados = "";
 
@@ -23,7 +22,6 @@
 
     echo $dados;
 
-  
 
 
 
