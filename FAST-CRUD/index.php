@@ -42,17 +42,17 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form class="">
+                    <form id="cad-usuario" class="" method="post">
                         <label for="name">Nome Curso:</label>
-                        <input type="text" class="form-control" id="">
+                        <input type="text" class="form-control" id="nome_curso" name="nome_curso" placeholder="Nome do Curso" required>
                         <label for="name">Descricao Curso:</label>
-                        <input type="text" class="form-control" id="">
+                        <input type="text" class="form-control" id="descricao_curso" name="descricao_curso" required>
                         <label for="name">Carga Horária:</label>
-                        <input type="text" class="form-control" id="">
+                        <input type="text" class="form-control" id="carga_horaria" name="carga_horaria" required>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button  class="btn btn-primary">Save changes</button>
                 </div>
                 </form>
             </div>
