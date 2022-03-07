@@ -42,6 +42,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
+                    <span id="msgAlerta"></span>
                     <form id="cad-usuario" class="" method="post">
                         <label for="name">Nome Curso:</label>
                         <input type="text" class="form-control" id="nome_curso" name="nome_curso" placeholder="Nome do Curso" required>
@@ -52,7 +53,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button  class="btn btn-primary">Save changes</button>
+                    <input type="submit" class="btn btn-outline-success btn-sm" id="cad-usuario-btn" value="Cadastrar" />
                 </div>
                 </form>
             </div>
