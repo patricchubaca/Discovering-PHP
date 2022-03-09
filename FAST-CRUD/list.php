@@ -1,5 +1,5 @@
 <?php
-include_once "conexao.php";
+include_once "conexaoDB/conexao.php";
 
 $pagina = filter_input(INPUT_GET, "pagina", FILTER_SANITIZE_NUMBER_INT);
 
