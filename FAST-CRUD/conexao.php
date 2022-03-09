@@ -1,14 +1,19 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "root";
 
-try {
-  $conn = new PDO("mysql:host=$servername;dbname=tb_cursos", $username, $password);
-  // set the PDO error mode to exception
-  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$host = "localhost";
+$user = "root";
+$pass = "root";
+$dbname = "celk";
+$port = 3306;
 
-} catch(PDOException $e) {
-  echo "Connection failed: " . $e->getMessage();
+try{
+    //Conexão com a porta
+    $conn = new PDO("mysql:host=$host;port=$port;dbname=" . $dbname, $user, $pass);
+
+    //Conexão sem a porta
+    //$conn = new PDO("mysql:host=$host;dbname=" . $dbname, $user, $pass);
+
+    //echo "Conexão com banco de dados realizado com sucesso!";
+}  catch(PDOException $err){
+    echo "Erro: Conexão com banco de dados não foi realizada com sucesso. Erro gerado " . $err->getMessage();
 }
-?>
