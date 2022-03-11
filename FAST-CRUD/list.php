@@ -10,7 +10,10 @@ if (!empty($pagina)) {
     $inicio = ($pagina * $qnt_result_pg) - $qnt_result_pg;
 
     $query_usuarios = "SELECT id, nome, email FROM usuarios ORDER BY id DESC LIMIT $inicio, $qnt_result_pg";
-    $result_usuarios = $conn->prepare($query_usuarios);
+    $result_usuarios = $conn->prepare($[
+        
+        [[]]
+    ]);
     $result_usuarios->execute();
 
     $dados = "<div class='table-responsive'>
@@ -30,7 +33,9 @@ if (!empty($pagina)) {
                     <td>$id</td>
                     <td>$nome</td>
                     <td>$email</td>
-                    <td>Ações</td>
+                    <td><button id='$id' class='btn btn-outline-primary btn-sm' onclick='visualisarUsuario($id)'>Visualizar</button>
+                    <button id='$id' class='btn btn-outline-danger btn-sm' onclick='deletarUsuario($id)'>Deletar</button>
+                    </td>
                 </tr>";
     }
 

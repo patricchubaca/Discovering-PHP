@@ -1,7 +1,7 @@
 const tbody = document.querySelector(".listar-usuarios");
 const cadForm = document.getElementById("cad-usuario-form");
 const msgAlertaErroCad = document.getElementById("msgAlertaErroCad");
-const msgAlerta = document.getElementById("msgAlerta");
+const msgAlerta = document.getElementById("msgAlerta"); 
 const cadModal = new bootstrap.Modal(document.getElementById("cadUsuarioModal"));
 
 const listarUsuarios = async (pagina) => {
@@ -37,3 +37,19 @@ cadForm.addEventListener("submit", async (e) => {
     }
     document.getElementById("cad-usuario-btn").value = "Cadastrar";
 });
+
+    async function visualisarUsuario(id){
+       const dados  =  await fetch('editar.php?id= ' + id);
+       const resposta = dados.json;
+
+
+    alert (id);
+    
+}
+
+    async function deletarUsuario(id){
+        const dados  =  await fetch('deletar.php?id= ' + id);
+
+    alert (id);
+    
+}
