@@ -39,17 +39,17 @@ cadForm.addEventListener("submit", async (e) => {
 });
 
     async function visualisarUsuario(id){
-       const dados  =  await fetch('editar.php?id= ' + id);
-       const resposta = dados.json;
-
-
-    alert (id);
+       const dados  =  await fetch('visualizar.php?id= ' + id);
+       const resposta = dados.json();
+       
+       console.log(resposta);
     
 }
 
     async function deletarUsuario(id){
         const dados  =  await fetch('deletar.php?id= ' + id);
+        const resposta = dados.json();
 
-    alert (id);
+        console.log(resposta);
     
 }
