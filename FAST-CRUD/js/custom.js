@@ -39,10 +39,11 @@ cadForm.addEventListener("submit", async (e) => {
 });
 
     async function visualisarUsuario(id){
-       const dados  =  await fetch('visualizar.php?id= ' + id);
-       const resposta = dados.json();
+       const dados  =  await fetch('editar.php?id= ' + id);
+       const resposta = await dados.json();
        
-       console.log(resposta);
+       console.log(resposta['msg']);
+      
     
 }
 
@@ -52,4 +53,12 @@ cadForm.addEventListener("submit", async (e) => {
 
         console.log(resposta);
     
+}
+
+async function editarUsuario(id){
+    const dados  =  await fetch('editar.php?id= ' + id);
+    const resposta = dados.json();
+    
+    console.log(resposta);
+ 
 }
