@@ -10,10 +10,7 @@ if (!empty($pagina)) {
     $inicio = ($pagina * $qnt_result_pg) - $qnt_result_pg;
 
     $query_usuarios = "SELECT id, nome, email FROM usuarios ORDER BY id DESC LIMIT $inicio, $qnt_result_pg";
-    $result_usuarios = $conn->prepare($[
-        
-        [[]]
-    ]);
+    $result_usuarios = $conn->prepare($query_usuarios);
     $result_usuarios->execute();
 
     $dados = "<div class='table-responsive'>
