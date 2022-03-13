@@ -64,9 +64,11 @@ Instruções para acessar o banco.
 		
 		 USE DATABASE;
 		 
-- Exibição descritiva de uma tabela :
+  DESC
+- Descreve databases, tabelas e etc.   
 		
 		 DESC 'nome_tabela';
+		 DESC 'data_base';
 
 ### COMANDO PARA ATIVIDADES NO LINUX  
 
@@ -90,7 +92,7 @@ ESCREVE AS ULTIMAS 10 LINHAS DO ARQUIVO
 	
 Debug de Arrays e Obijetos 
 		  
-	file_put_contents('/tmp/degubPatric', date('H:i:s').print_r($lista, 1)."\n", FILE_APPEND);
+	file_put_contents('/tmp/degubPatric', date('H:i:s').print_r(" Debug Result =>".$dados."\n", 1), FILE_APPEND);
 	  
 Debug de Strings 			
 	
