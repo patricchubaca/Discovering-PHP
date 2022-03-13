@@ -64,9 +64,11 @@ Instruções para acessar o banco.
 		
 		 USE DATABASE;
 		 
-- Exibição descritiva de uma tabela :
+DESC
+- Descreve databases, tabelas e etc.   
 		
 		 DESC 'nome_tabela';
+		 DESC 'data_base';
 
 ### COMANDO PARA ATIVIDADES NO LINUX  
 
