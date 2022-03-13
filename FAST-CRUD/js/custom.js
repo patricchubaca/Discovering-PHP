@@ -44,15 +44,13 @@ cadForm.addEventListener("submit", async (e) => {
        
        console.log(resposta['msg']);
       
-    
 }
-
     async function deletarUsuario(id){
-        const dados  =  await fetch('deletar.php?id= ' + id);
+        const dados  =  await fetch('delete.php?id= ' + id);
         const resposta = dados.json();
-
+        
         console.log(resposta);
-    
+        listarUsuarios(1)
 }
 
 async function editarUsuario(id){

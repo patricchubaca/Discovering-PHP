@@ -2,24 +2,22 @@
 
 include_once "conexaoDB/conexao.php";
 
-$dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
+$id = filter_input(INPUT_GET,"id", FILTER_SANITIZE_NUMBER_INT);
+
+file_put_contents('/tmp/degubPatric', date('H:i:s').print_r(" Debug Result =>".$id."\n", 1), FILE_APPEND);
 
 
-if (empty($dados['nome'])) {
-    $retorna = ['erro' => true, 'msg' => "<div class='alert alert-danger' role='alert'>Erro: Necessário preencher o campo nome!</div>"];
-} elseif (empty($dados['email'])) {
-    $retorna = ['erro' => true, 'msg' => "<div class='alert alert-danger' role='alert'>Erro: Necessário preencher o campo e-mail!</div>"];
-} else {
-    $query_usuario = "INSERT INTO usuarios (nome, email) VALUES (:nome, :email)";
+if (!empty($id)) {
+
+    $query_usuario = "DELETE FROM usuarios WHERE id = :id";
     $cad_usuario = $conn->prepare($query_usuario);
-    $cad_usuario->bindParam(':nome', $dados['nome']);
-    $cad_usuario->bindParam(':email', $dados['email']);
+    $cad_usuario->bindParam(':id', $id);
     $cad_usuario->execute();
 
     if ($cad_usuario->rowCount()) {                                                                                                                                                                                                                 
-        $retorna = ['erro' => false, 'msg' => "<div class='alert alert-success' role='alert'>Usuário cadastrado com sucesso!</div>"];
+        $retorna = ['erro' => false, 'msg' => "<div class='alert alert-success' role='alert'>Usuário deletado com sucesso!</div>"];
     } else {
-        $retorna = ['erro' => true, 'msg' => "<div class='alert alert-danger' role='alert'>Erro: Usuário não cadastrado com sucesso!</div>"];
+        $retorna = ['erro' => true, 'msg' => "<div class='alert alert-danger' role='alert'>Erro: Usuário não deletado!</div>"];
     }
 }
 
