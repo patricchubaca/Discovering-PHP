@@ -64,7 +64,7 @@ Instruções para acessar o banco.
 		
 		 USE DATABASE;
 		 
-DESC
+  DESC
 - Descreve databases, tabelas e etc.   
 		
 		 DESC 'nome_tabela';
