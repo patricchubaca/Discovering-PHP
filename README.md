@@ -92,7 +92,7 @@ ESCREVE AS ULTIMAS 10 LINHAS DO ARQUIVO
 	
 Debug de Arrays e Obijetos 
 		  
-	file_put_contents('/tmp/degubPatric', date('H:i:s').print_r(" Debug Result =>".$dados."\n", 1), FILE_APPEND);
+	 file_put_contents('/tmp/degubPatric', date('H:i:s')." Debug Result Arrays =>"."$conteudo\n", FILE_APPEND);
 	  
 Debug de Strings 			
 	
