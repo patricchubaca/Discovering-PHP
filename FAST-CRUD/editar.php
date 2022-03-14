@@ -1,7 +1,22 @@
 <?php
 
-$lista = ['erro' => false, 'msg' => "<div class='alert alert-success' role='alert'>Usuário cadastrado com sucesso!</div>"];
+include_once "conexaoDB/conexao.php";
 
-file_put_contents('/tmp/degubPatric', date('H:i:s').print_r($lista, 1)."\n", FILE_APPEND);
+$dados = filter_input(INPUT_GET,"id", FILTER_SANITIZE_NUMBER_INT);
 
- echo json_encode($lista);
+if (!empty($id)) {
+
+    $query_usuario = "UPDATE usuarios SET nome = :nome ,email = :email WHERE id = :id";
+    $cad_usuario = $conn->prepare($query_usuario);
+    $cad_usuario->bindParam(':nome', $dados['nome']);
+    $cad_usuario->bindParam(':nome', $dados['email']);
+    $cad_usuario->bindParam(':id', $dados['id']);
+
+    if ($cad_usuario->execute()) {                                                                                                                                                                                                                 
+        $retorna = ['erro' => false, 'msg' => "<div class='alert alert-success' role='alert'>Usuário editado com sucesso!</div>"];
+    } else {
+        $retorna = ['erro' => true, 'msg' => "<div class='alert alert-danger' role='alert'>Erro: Usuário não editado!</div>"];
+    }
+}
+
+echo json_encode($retorna);

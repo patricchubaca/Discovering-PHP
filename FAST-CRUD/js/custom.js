@@ -1,7 +1,7 @@
 const tbody = document.querySelector(".listar-usuarios");
 const cadForm = document.getElementById("cad-usuario-form");
 const msgAlertaErroCad = document.getElementById("msgAlertaErroCad");
-const msgAlerta = document.getElementById("msgAlerta"); 
+const msgAlerta = document.getElementById("msgAlerta");
 const cadModal = new bootstrap.Modal(document.getElementById("cadUsuarioModal"));
 
 const listarUsuarios = async (pagina) => {
@@ -14,22 +14,22 @@ listarUsuarios(1);
 
 cadForm.addEventListener("submit", async (e) => {
     e.preventDefault();
-    
+
     const dadosForm = new FormData(cadForm);
     dadosForm.append("add", 1);
 
     document.getElementById("cad-usuario-btn").value = "Salvando...";
-    
+
     const dados = await fetch("cadastrar.php", {
         method: "POST",
         body: dadosForm,
     });
 
     const resposta = await dados.json();
-    
-    if(resposta['erro']){
+
+    if (resposta['erro']) {
         msgAlertaErroCad.innerHTML = resposta['msg'];
-    }else{
+    } else {
         msgAlerta.innerHTML = resposta['msg'];
         cadForm.reset();
         cadModal.hide();
@@ -38,25 +38,38 @@ cadForm.addEventListener("submit", async (e) => {
     document.getElementById("cad-usuario-btn").value = "Cadastrar";
 });
 
-    async function visualisarUsuario(id){
-       const dados  =  await fetch('editar.php?id= ' + id);
-       const resposta = await dados.json();
-       
-       console.log(resposta['msg']);
+async function visualisarUsuario(id) {
+
+    const dados = await fetch('visualizar.php?id= ' + id);
+    const resposta = await dados.json();
+
+    if (resposta['erro']) {
+        msgAlerta.innerHTML = resposta['msg'];
+    } else {
+
+        const editModal = new bootstrap.Modal(document.getElementById("editUsuarioModal"));
+        editModal.show();
+        //document.getElementById("editid").value = resposta['dados'].id;
+        document.getElementById("editnome").value =  resposta['dados'].nome;
+        document.getElementById("editemail").value =  resposta['dados'].email;
+
       
+
+    }
+
 }
-    async function deletarUsuario(id){
-        const dados  =  await fetch('delete.php?id= ' + id);
-        const resposta = dados.json();
-        
-        console.log(resposta);
-        listarUsuarios(1)
+async function deletarUsuario(id) {
+    const dados = await fetch('delete.php?id= ' + id);
+    const resposta = dados.json();
+
+    console.log(resposta);
+    listarUsuarios(1)
 }
 
-async function editarUsuario(id){
-    const dados  =  await fetch('editar.php?id= ' + id);
+async function editarUsuario(id) {
+    const dados = await fetch('editar.php?id= ' + id);
     const resposta = dados.json();
-    
+
     console.log(resposta);
- 
+
 }

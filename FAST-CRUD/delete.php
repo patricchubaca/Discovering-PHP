@@ -4,9 +4,6 @@ include_once "conexaoDB/conexao.php";
 
 $id = filter_input(INPUT_GET,"id", FILTER_SANITIZE_NUMBER_INT);
 
-file_put_contents('/tmp/degubPatric', date('H:i:s').print_r(" Debug Result =>".$id."\n", 1), FILE_APPEND);
-
-
 if (!empty($id)) {
 
     $query_usuario = "DELETE FROM usuarios WHERE id = :id";
