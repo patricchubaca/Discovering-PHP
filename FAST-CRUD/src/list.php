@@ -1,5 +1,5 @@
 <?php
-include_once "conexaoDB/conexao.php";
+include_once "../conexaoDB/conexao.php";
 
 $pagina = filter_input(INPUT_GET, "pagina", FILTER_SANITIZE_NUMBER_INT);
 
@@ -30,7 +30,7 @@ if (!empty($pagina)) {
                     <td>$id</td>
                     <td>$nome</td>
                     <td>$email</td>
-                    <td><button id='$id' class='btn btn-outline-primary btn-sm' onclick='visualisarUsuario($id)'>Visualizar</button>
+                    <td><button id='$id' class='btn btn-outline-primary btn-sm' onclick='visualisarUsuario($id)' data-bs-toggle='modal' data-bs-target='#editUsuarioModal'>Visualizar</button>
                     <button id='$id' class='btn btn-outline-danger btn-sm' onclick='deletarUsuario($id)'>Deletar</button>
                     </td>
                 </tr>";

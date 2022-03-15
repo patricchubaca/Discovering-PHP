@@ -43,7 +43,7 @@ include_once "conexaoDB/conexao.php";
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="cadUsuarioModalLabel">Editar Usuário</h5>
+                    <h5 class="modal-title" id="cadUsuarioModalLabel">Cadastrar Usuário</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -70,11 +70,12 @@ include_once "conexaoDB/conexao.php";
                             <label for="email" class="col-form-label">Carga Horária:</label>
                             <input type="email" name="email" class="form-control" id="carga_horaria" placeholder="Digite o seu melhor e-mail" required>
                         </div>
+                         -->
                         <div class="modal-footer">
                             <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">Fechar</button>
                             <input type="submit" class="btn btn-outline-success btn-sm" id="cad-usuario-btn" value="Cadastrar" />
                         </div>
-                        -->
+
                     </form>
                 </div>
 
@@ -92,7 +93,7 @@ include_once "conexaoDB/conexao.php";
                 </div>
                 <div class="modal-body">
                     <form id="edit-usuario-form">
-                        <span id="msgAlertaErroCad"></span>
+                        <span id="msgAlertaErroEdit"></span>
                         <input type="hidden" name="id" id="editid">
                         <div class="mb-3">
                             <label for="nome" class="col-form-label">Nome:</label>
@@ -123,7 +124,7 @@ include_once "conexaoDB/conexao.php";
                     </form>
                 </div>
 
-            </div> 
+            </div>
         </div>
     </div>
 

@@ -1,6 +1,6 @@
 <?php
 
-include_once "conexaoDB/conexao.php";
+include_once "../conexaoDB/conexao.php";
 
 $dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
