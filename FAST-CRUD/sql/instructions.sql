@@ -43,8 +43,7 @@ INSERT INTO `tb_cursos` (`nome_curso`,`descricao_curso`, `carga_horaria`) VALUES
 UPDATE tb_curso SET  nome_curso = " Java JDBC", descricao_curso = "Você aprendera a se conecatar ao banco de dados", carga_horaria = "2020-10-01 10:00" where tutorial_id = 3 ;
 
 DROP TABLE IF EXISTS `usuarios`;
-CREATE TABLE IF NOT EXISTS `usuarios` (            <a class="navbar-brand" href="#">Navbar</a>
-            </nav>
+CREATE TABLE IF NOT EXISTS `usuarios` (         
   `id` int NOT NULL AUTO_INCREMENT,
   `nome` varchar(220) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(220) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
