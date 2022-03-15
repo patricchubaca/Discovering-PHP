@@ -83,17 +83,17 @@ include_once "conexaoDB/conexao.php";
     </div>
 
 
-    <div class="modal fade" id="editUsuarioModal" tabindex="-1" aria-labelledby="cadUsuarioModalLabel" aria-hidden="true">
+    <div class="modal fade" id="editUsuarioModal" tabindex="-1" aria-labelledby="editUsuarioModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="cadUsuarioModalLabel">Editar Usuário</h5>
+                    <h5 class="modal-title" id="editUsuarioModalLabel">Editar Usuário</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form id="edit-usuario-form">
                         <span id="msgAlertaErroCad"></span>
-                        
+                        <input type="hidden" name="id" id="editid">
                         <div class="mb-3">
                             <label for="nome" class="col-form-label">Nome:</label>
                             <input type="text" name="nome" class="form-control" id="editnome" placeholder="Digite o nome completo">
@@ -118,8 +118,7 @@ include_once "conexaoDB/conexao.php";
                             -->
                         <div class="modal-footer">
                             <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">Fechar</button>
-                            <input type="submit" class="btn btn-outline-success btn-sm" id="cad-usuario-btn" value="Cadastrar" />
-                        </div>
+                            <input type="submit" class='btn btn-outline-danger btn-sm' id="cad-usuario-btn" value="Cadastrar"></input>
 
                     </form>
                 </div>

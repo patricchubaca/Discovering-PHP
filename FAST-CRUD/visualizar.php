@@ -11,8 +11,6 @@ if (!empty($id)) {
     $cad_usuario->bindParam(':id', $id);
     $cad_usuario->execute();
     $retur_user = $cad_usuario->fetch(PDO::FETCH_ASSOC);
-
-    file_put_contents('/tmp/degubPatric', date('H:i:s').print_r($retur_user, 1)."\n", FILE_APPEND);
                                                                                                                                                                                                                
     $retorna = ['erro' => false, 'dados' => $retur_user];
  
