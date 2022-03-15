@@ -18,7 +18,7 @@ listarUsuarios(1);
 cadForm.addEventListener("submit", async (e) => {
     e.preventDefault();
 
-    const dadosForm = new FormData(cadForm);
+    msgAlertaErroEdit.innerHTMLmsgAlertaErroCadata(cadForm);
     dadosForm.append("add", 1);
 
     document.getElementById("cad-usuario-btn").value = "Salvando...";
@@ -39,6 +39,7 @@ cadForm.addEventListener("submit", async (e) => {
         cadForm.reset();
         cadModal.hide();
         listarUsuarios(1);
+        
     }
     document.getElementById("cad-usuario-btn").value = "Cadastrar";
 });
@@ -46,6 +47,7 @@ cadForm.addEventListener("submit", async (e) => {
 async function visualisarUsuario(id) {
 
     msgAlertaErroEdit.innerHTML = "";
+    msgAlertaErroCad.innerHTML = "";
 
     const dados = await fetch('src/visualizar.php?id= ' + id);
     const resposta = await dados.json();
@@ -93,18 +95,15 @@ editForm.addEventListener("submit", async (e) => {
 
     if (resposta['erro']) {
 
-        msgAlertaErroCad.innerHTML = resposta['msg'];
+        msgAlertaErroEdit.innerHTML = resposta['msg'];
 
     } else {
 
-        msgAlertaErroEdit.innerHTML = resposta['msg'];
-
-        listarUsuarios(1);
-        cadForm.reset();
+        msgAlertaErroCad.innerHTML = resposta['msg'];
+     
+        editForm.reset();
         editModal.hide();
-
-      
-    }
+    }   listarUsuarios(1);
 
     document.getElementById("cad-usuario-btn").value = "Cadastrar";
 

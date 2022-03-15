@@ -17,7 +17,7 @@ if (!empty($id)) {
     } else {
 
        $retorna = ['erro' => true, 'msg' => "<div class='alert alert-danger' role='alert'>Erro: Usuário não encontrado!</div>"];
-    }
+    } 
 
 echo json_encode($retorna);
 

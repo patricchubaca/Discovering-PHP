@@ -48,7 +48,6 @@ include_once "conexaoDB/conexao.php";
                 </div>
                 <div class="modal-body">
                     <form id="cad-usuario-form">
-                        <span id="msgAlertaErroCad"></span>
                         <div class="mb-3">
                             <label for="nome" class="col-form-label">Nome:</label>
                             <input type="text" name="nome" class="form-control" id="nome" placeholder="Digite o nome completo">
@@ -94,6 +93,7 @@ include_once "conexaoDB/conexao.php";
                 <div class="modal-body">
                     <form id="edit-usuario-form">
                         <span id="msgAlertaErroEdit"></span>
+                        <span id="msgAlertaErroCad"></span>
                         <input type="hidden" name="id" id="editid">
                         <div class="mb-3">
                             <label for="nome" class="col-form-label">Nome:</label>

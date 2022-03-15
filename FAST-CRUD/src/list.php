@@ -30,8 +30,10 @@ if (!empty($pagina)) {
                     <td>$id</td>
                     <td>$nome</td>
                     <td>$email</td>
-                    <td><button id='$id' class='btn btn-outline-primary btn-sm' onclick='visualisarUsuario($id)' data-bs-toggle='modal' data-bs-target='#editUsuarioModal'>Visualizar</button>
-                    <button id='$id' class='btn btn-outline-danger btn-sm' onclick='deletarUsuario($id)'>Deletar</button>
+                    
+                    <td> <button type='button' name='$id' class='btn btn-outline-primary btn-sm' onclick='visualisarUsuario($id)' data-bs-target='#editUsuarioModal'>Visualizar</button>
+                    <button name='$id' class='btn btn-outline-danger btn-sm' onclick='deletarUsuario($id)'>Deletar</button>
+    
                     </td>
                 </tr>";
     }
