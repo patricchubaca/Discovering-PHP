@@ -4,7 +4,6 @@ include_once "../conexaoDB/conexao.php";
 
 $dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
-
 if (empty($dados['nome'])) {
     $retorna = ['erro' => true, 'msg' => "<div class='alert alert-danger' role='alert'>Erro: Necessário preencher o campo nome!</div>"];
 } elseif (empty($dados['email'])) {

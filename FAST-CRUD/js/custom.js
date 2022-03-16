@@ -18,7 +18,11 @@ listarUsuarios(1);
 cadForm.addEventListener("submit", async (e) => {
     e.preventDefault();
 
-    msgAlertaErroEdit.innerHTMLmsgAlertaErroCadata(cadForm);
+    msgAlertaErroEdit.innerHTML = "";
+    msgAlertaErroCad.innerHTML = "";
+
+    const dadosForm = new FormData(cadForm);
+
     dadosForm.append("add", 1);
 
     document.getElementById("cad-usuario-btn").value = "Salvando...";
@@ -35,10 +39,18 @@ cadForm.addEventListener("submit", async (e) => {
         msgAlertaErroCad.innerHTML = resposta['msg'];
 
     } else {
+
         msgAlerta.innerHTML = resposta['msg'];
         cadForm.reset();
         cadModal.hide();
         listarUsuarios(1);
+        
+        const nome = setTimout(myGreeting, 5000)
+
+        function myGreeting() {
+        
+            msgAlerta.innerHTML = "";
+        }
         
     }
     document.getElementById("cad-usuario-btn").value = "Cadastrar";

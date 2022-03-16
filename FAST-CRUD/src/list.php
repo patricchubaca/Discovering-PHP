@@ -9,7 +9,7 @@ if (!empty($pagina)) {
     $qnt_result_pg = 10; //Quantidade de registro por página
     $inicio = ($pagina * $qnt_result_pg) - $qnt_result_pg;
 
-    $query_usuarios = "SELECT id, nome, email FROM usuarios ORDER BY id DESC LIMIT $inicio, $qnt_result_pg";
+    $query_usuarios = "SELECT id, nome, email FROM usuarios ORDER BY id ASC LIMIT $inicio, $qnt_result_pg";
     $result_usuarios = $conn->prepare($query_usuarios);
     $result_usuarios->execute();
 
@@ -31,7 +31,7 @@ if (!empty($pagina)) {
                     <td>$nome</td>
                     <td>$email</td>
                     
-                    <td> <button type='button' name='$id' class='btn btn-outline-primary btn-sm' onclick='visualisarUsuario($id)' data-bs-target='#editUsuarioModal'>Visualizar</button>
+                    <td> <button id= type='button' name='$id' class='btn btn-outline-primary btn-sm' onclick='visualisarUsuario($id)' data-bs-target='#editUsuarioModal'>Visualizar</button>
                     <button name='$id' class='btn btn-outline-danger btn-sm' onclick='deletarUsuario($id)'>Deletar</button>
     
                     </td>
