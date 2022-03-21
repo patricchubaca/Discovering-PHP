@@ -37,10 +37,6 @@ CREATE TABLE tb_cursos(
     carga_horaria varchar(250)
 );
 
-INSERT INTO `tb_cursos` (`nome_curso`,`descricao_curso`, `carga_horaria`) VALUES ('Primeiros passos Spring', 'Fomos chamados para implementar um sistema em uma loja de produtos eletrônicos que ajudasse no controle das quantidades de produto que temos em loja. Começamos alinhando quais eram as operações que o cliente esperava poder realizar nesse controle de produtos.','2020-12-01
-12:32');
-
-UPDATE tb_curso SET  nome_curso = " Java JDBC", descricao_curso = "Você aprendera a se conecatar ao banco de dados", carga_horaria = "2020-10-01 10:00" where tutorial_id = 3 ;
 
 DROP TABLE IF EXISTS `usuarios`;
 CREATE TABLE IF NOT EXISTS `usuarios` (         
@@ -3071,3 +3067,9 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+INSERT INTO `tb_cursos` (`nome_curso`,`descricao_curso`, `carga_horaria`) VALUES ('Primeiros passos Spring', 'Fomos chamados para implementar um sistema em uma loja de produtos eletrônicos que ajudasse no controle das quantidades de produto que temos em loja. Começamos alinhando quais eram as operações que o cliente esperava poder realizar nesse controle de produtos.','2020-12-01
+12:32');
+
+UPDATE tb_curso SET  nome_curso = " Java JDBC", descricao_curso = "Você aprendera a se conecatar ao banco de dados", carga_horaria = "2020-10-01 10:00" where tutorial_id = 3 ;
