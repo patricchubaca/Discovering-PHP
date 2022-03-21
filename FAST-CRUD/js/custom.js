@@ -45,13 +45,10 @@ cadForm.addEventListener("submit", async (e) => {
         cadModal.hide();
         listarUsuarios(1);
         
-        const nome = setTimout(myGreeting, 5000)
-
-        function myGreeting() {
-        
+        setTimout(function(){
             msgAlerta.innerHTML = "";
-        }
-        
+        }, 5000);
+
     }
     document.getElementById("cad-usuario-btn").value = "Cadastrar";
 });
