@@ -83,6 +83,7 @@ async function deletarUsuario(id) {
 }
 
 editForm.addEventListener("submit", async (e) => {
+    
     e.preventDefault();
 
     const dadosForm = new FormData(editForm);
@@ -109,7 +110,7 @@ editForm.addEventListener("submit", async (e) => {
     } else {
 
         msgAlertaErroCad.innerHTML = resposta['msg'];
-     
+
         editForm.reset();
         editModal.hide();
     }   listarUsuarios(1);
