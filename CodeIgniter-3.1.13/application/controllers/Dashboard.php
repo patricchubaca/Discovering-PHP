@@ -6,18 +6,20 @@ class Dashboard extends CI_Controller {
 
 	public function index()
 	{
-		$inscritos = $this->db->get('inscritos')->result();
+		//$inscritos = $this->db->get('inscritos')->result_array();
 
+		//$dados =  array("inscritos" => $inscritos);
+
+		//$this->load->model("dashboard_model");
+
+		$lista = $this->db->get("inscritos")->result_array();
+
+		$dados = array("inscritos"=>$lista);
 
 		echo "<pre>";
-		var_dump($inscritos);
+		var_dump($dados);
 		echo "</pre>";
-
-
-		die();
-
-		$teste = ['nome'=> 'Hellow Hord'];
-
-		$this->load->view('dashboard',$inscritos);
+		
+		$this->load->view('dashboard', $dados);
 	}
 }
