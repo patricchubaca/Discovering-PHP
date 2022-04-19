@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php base_url('assets/css/bootstrap.min.css')?>">
 </head>
 <body>
-	<h1>Novo</h1>
+	<h1>Cadastre-se</h1>
 
 	<?php
 	foreach($inscritos as $inscrito){
