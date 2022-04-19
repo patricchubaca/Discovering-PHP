@@ -6,6 +6,7 @@ class Dashboard extends CI_Controller {
 
 	public function index()
 	{
+		
 		//$inscritos = $this->db->get('inscritos')->result_array();
 
 		//$dados =  array("inscritos" => $inscritos);
