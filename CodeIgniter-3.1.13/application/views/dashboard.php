@@ -11,40 +11,49 @@
 <body>
 
 	<div class="container">
-		<h1>Cadastre-se</h1>
-
-		<table class="table">
-			<thead>
-				<tr>
-					<th scope="col">Nome</th>
-					<th scope="col">E-mail</th>
-					<th scope="col">Cidade</th>
-					<th scope="col">Estado</th>
-					<th scope="col">Ações</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<?php
-					foreach($inscritos as $inscrito){ ?>
-						<th scope="row"><?php echo $inscrito['nome'] ?></th>
-						<td><?php echo $inscrito['email'] ?></td>
-						<td><?php echo $inscrito['cidade'] ?></td>
-						<td><?php echo $inscrito['uf'] ?></td>
-						<td><button type="button" class="btn btn-danger">Deletar</button>
-							<button type="button" class="btn btn-secondary">Editar</button>
-						</td>
-
-					<?php } ?>
-				</tr>
-
-			</tbody>
-		</table>	
-
-
+		<div class="row">
+			<div class="col-6">
+				<h1 class="text-start mt-2">Listagem dos cadastrados</h1>
+			</div>
+			<div class="col-6 text-end mt-5">
+				<button type="button" class="btn btn-primary">Cadastrar</button>
+			</div>
+		</div>
 	</div>
+<div class="container">
+	<table class="table">
+		<thead>
+			<tr>
+				<th scope="col">Nome</th>
+				<th scope="col">E-mail</th>
+				<th scope="col">Cidade</th>
+				<th scope="col">Estado</th>
+				<th scope="col">Ações</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<?php
+				foreach($inscritos as $inscrito){ ?>
+					<th scope="row"><?php echo $inscrito['nome'] ?></th>
+					<td><?php echo $inscrito['email'] ?></td>
+					<td><?php echo $inscrito['cidade'] ?></td>
+					<td><?php echo $inscrito['uf'] ?></td>
+					<td><button type="button" class="btn btn-danger">Deletar</button>
+						<button type="button" class="btn btn-secondary">Editar</button>
 
-	
+					</td>
+
+				<?php } ?>
+			</tr>
+
+		</tbody>
+	</table>	
+
+
+</div>
+
+
 
 </body>
 </html>
