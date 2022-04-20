@@ -6,6 +6,15 @@ class Register extends CI_Controller {
 
 	public function index(){
 
+		$lista = $this->db->get("inscritos")->result_array();
+
+		$dados = array("inscritos"=>$lista);
+
+		$this->load->view('dashboard', $dados);
+	}
+
+	public function register(){
+
 		$usuarios = array(
 			"nome" => $this->input->post("nome"),
 			"email" => $this->input->post("email"),
@@ -14,11 +23,11 @@ class Register extends CI_Controller {
 
 		);
 
+		$this->db->insert("inscritos", $usuarios);
+
 		$lista = $this->db->get("inscritos")->result_array();
 
 		$dados = array("inscritos"=>$lista);
-
-		$this->db->insert("inscritos", $usuarios);
 		
 		$this->load->view('dashboard', $dados);
 	}

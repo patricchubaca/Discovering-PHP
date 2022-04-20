@@ -33,18 +33,22 @@
 				</tr>
 			</thead>
 			<tbody>
-					<?php
-					foreach($inscritos as $inscrito){ ?>
-				<tr>
+				<?php
+				foreach($inscritos as $inscrito){ ?>
+					<tr>
 						<th scope="row"><?php echo $inscrito['nome'] ?></th>
 						<td><?php echo $inscrito['email'] ?></td>
 						<td><?php echo $inscrito['cidade'] ?></td>
 						<td><?php echo $inscrito['uf'] ?></td>
 						<td>
-							<button type="button" class="btn btn-danger">Deletar</button>
-							<button type="button" class="btn btn-secondary">Editar</button>
+							<a href="<?php echo site_url('DropRegister/DropRegister')?>">
+								<button class="btn btn-danger">Deletar</button>
+							</a>
+								<a href="<?php echo site_url('EditRegister/EditRegister/'.$inscrito['id']);?>">
+								<button class="btn btn-warning">Editar</button>
+							</a>	
 						</td>
-				</tr>
+					</tr>
 				<?php } ?>
 			</tbody>
 		</table>
