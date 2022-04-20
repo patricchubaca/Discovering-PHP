@@ -2,7 +2,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Register extends CI_Controller(){
+class Register extends CI_Controller {
 
 	public function index(){
 
@@ -14,13 +14,17 @@ class Register extends CI_Controller(){
 
 		);
 
-		$this->db->insert("inscritos", $usuarios);
+		$lista = $this->db->get("inscritos")->result_array();
 
-		$this->load->view('registerOk');
+		$dados = array("inscritos"=>$lista);
+
+		$this->db->insert("inscritos", $usuarios);
+		
+		$this->load->view('dashboard', $dados);
 	}
 
-	public function teste(){
+	public function pageRegister(){
 
-		var_dump($this->input->post());
+		$this->load->view('register');
 	}
 }

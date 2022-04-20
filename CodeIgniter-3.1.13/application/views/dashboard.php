@@ -15,7 +15,9 @@
 				<h1 class="text-start mt-2">Listagem dos cadastrados</h1>
 			</div>
 			<div class="col-6 text-end mt-5">
-				<button type="button" class="btn btn-primary">Cadastrar</button>
+				<a href="<?php echo site_url('Register/pageRegister')?>">
+					<button class="btn btn-primary">Cadastrar</button>
+				</a>	
 			</div>
 		</div>
 	</div>
@@ -31,20 +33,20 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
 					<?php
 					foreach($inscritos as $inscrito){ ?>
+				<tr>
 						<th scope="row"><?php echo $inscrito['nome'] ?></th>
 						<td><?php echo $inscrito['email'] ?></td>
 						<td><?php echo $inscrito['cidade'] ?></td>
 						<td><?php echo $inscrito['uf'] ?></td>
-						<td><button type="button" class="btn btn-danger">Deletar</button>
+						<td>
+							<button type="button" class="btn btn-danger">Deletar</button>
 							<button type="button" class="btn btn-secondary">Editar</button>
 						</td>
-					<?php } ?>
 				</tr>
-
+				<?php } ?>
 			</tbody>
 		</table>
-</body>
-</html>
+	</body>
+	</html>
