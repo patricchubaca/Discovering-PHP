@@ -46,50 +46,5 @@
 
 			</tbody>
 		</table>
-
-		<h3> Registro de Usuários </h3>	
-
-		<?php
-			echo form_open(action:"usuarios/novo");
-
-			echo form_label(label_text:"Nome", id:"nome");
-
-			echo form_input(array(
-				"name" => "nome",
-				"id" => "nome",
-				"class" => "form-control",
-				"maxlenght" => "255"
-			)); 
-
-			echo form_label(label_text:"E-mail", id:"email");
-
-			echo form_input(array(
-				"name" => "email",
-				"id" => "email",
-				"class" => "form-control",
-				"maxlenght" => "255"
-			)); 
-
-			echo form_label(label_text:"Cidade", id:"cidade");
-
-			echo form_input(array(
-				"name" => "cidade",
-				"id" => "cidade",
-				"class" => "form-control",
-				"maxlenght" => "255"
-			)); 
-
-			echo form_label(label_text:"Estado", id:"estado");
-
-			echo form_input(array(
-				"name" => "estado",
-				"id" => "estado",
-				"class" => "form-control",
-				"maxlenght" => "255"
-			)); 
-
-			echo form_close();
-			?>
-	</div>
 </body>
 </html>
