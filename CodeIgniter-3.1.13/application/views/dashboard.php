@@ -41,10 +41,10 @@
 						<td><?php echo $inscrito['cidade'] ?></td>
 						<td><?php echo $inscrito['uf'] ?></td>
 						<td>
-							<a href="<?php echo site_url('DropRegister/DropRegister')?>">
+							<a href="<?php echo site_url('DropRegister/deleteRegister/'.$inscrito['id']);?>">
 								<button class="btn btn-danger">Deletar</button>
 							</a>
-								<a href="<?php echo site_url('EditRegister/EditRegister/'.$inscrito['id']);?>">
+								<a href="<?php echo site_url('EditRegister/editRegister/'.$inscrito['id']);?>">
 								<button class="btn btn-warning">Editar</button>
 							</a>	
 						</td>

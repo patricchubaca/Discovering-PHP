@@ -4,8 +4,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class DropRegister extends CI_Controller{
 
-	public function DropRegister(){
+	public function deleteRegister($id){
 
-			echo "Hellow world";
+		$this->db->where('id', $id);
+		$this->db->delete('inscritos');
+
+		$lista = $this->db->get("inscritos")->result_array();
+
+		$dados = array("inscritos"=>$lista);
+		
+		$this->load->view('dashboard', $dados);
+
 	}
 }

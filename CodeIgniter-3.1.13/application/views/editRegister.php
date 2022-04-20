@@ -12,7 +12,7 @@
 		<div class="container">
 		<div class="row">
 			<div class="col-6">
-				<h1 class="text-start mt-2">Cadastre-se</h1>
+				<h1 class="text-start mt-2">Altere seus dados</h1>
 			</div>
 			<div class="col-6 text-end mt-5">
 				<a href="<?php echo site_url('dashboard')?>">
@@ -22,11 +22,11 @@
 		</div>
 	</div>
 
-	<form action="<?php echo site_url('Register/register'); ?>" method="post">
+	<form action="<?php echo site_url('Register/index'); ?>" method="post">
 		<div class="container">
 			<div class="mb-3">
 				<label for="exampleFormControlInput1" class="form-label">Nome</label>
-				<input type="name" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="nome">
+				<input type="name" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="nome" value="">
 			</div>
 			<div class="mb-3">
 				<label for="exampleFormControlInput1" class="form-label">E-mail</label>
