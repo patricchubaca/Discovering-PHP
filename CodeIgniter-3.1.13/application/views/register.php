@@ -21,7 +21,7 @@
 			</div>
 		</div>
 	</div>
-
+	<?php foreach($dados as $dado){ ?>
 	<form action="<?php echo site_url('Register/register'); ?>" method="post">
 		<div class="container">
 			<div class="mb-3">
@@ -43,7 +43,7 @@
 			<button type="submit" class="btn btn-primary">Cadastrar</button>
 		</div>	
 	</div>
-
+<?php } ?>
 </form>
 </body>
 </html>

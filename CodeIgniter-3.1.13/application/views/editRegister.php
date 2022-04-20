@@ -22,28 +22,30 @@
 		</div>
 	</div>
 
-	<form action="<?php echo site_url('Register/index'); ?>" method="post">
+	<form action="<?php echo site_url('EditRegister/register'); ?>" method="post">
 		<div class="container">
 			<div class="mb-3">
 				<label for="exampleFormControlInput1" class="form-label">Nome</label>
-				<input type="name" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="nome" value="">
+				<input type="name" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="nome" value="<?php echo $inscritos['nome']?>">
 			</div>
 			<div class="mb-3">
 				<label for="exampleFormControlInput1" class="form-label">E-mail</label>
-				<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email">
+				<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email"
+				value="<?php echo $inscritos['email']?>">
 			</div>
 			<div class="mb-3">
 				<label for="exampleFormControlInput1" class="form-label">Cidade</label>
-				<input type="name" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="cidade">
+				<input type="name" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="cidade"
+				value="<?php echo $inscritos['cidade']?>">
 			</div>
 			<div class="mb-3">
 				<label for="exampleFormControlInput1" class="form-label">Estado</label>
-				<input type="name" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="uf">
+				<input type="name" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="uf"
+				value="<?php echo $inscritos['uf']?>">
 			</div>
 			<button type="submit" class="btn btn-primary">Cadastrar</button>
 		</div>	
 	</div>
-
 </form>
 </body>
 </html>

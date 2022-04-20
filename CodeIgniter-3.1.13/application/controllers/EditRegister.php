@@ -6,10 +6,12 @@ class EditRegister extends CI_Controller{
 
 	public function editRegister($id){
 
-	$dados = $this->db->get_where("inscritos", array(
+		$lista = $this->db->get_where("inscritos", array(
 			"id" => $id
 		))->row_array();
 
-	$this->load->view('editRegister',$dados);
+		$dados = array("inscritos"=>$lista);
+		
+		$this->load->view('editRegister',$dados);						
 	}
 }
