@@ -20,9 +20,10 @@
 				</a>	
 			</div>
 		</div>
-	</div>
-
-	<form action="<?php echo site_url('EditRegister/register'); ?>" method="post">
+	</div>			
+				
+	
+		<form action="<?php echo site_url('EditRegister/register/'.$inscritos['id']);?>" method="post">
 		<div class="container">
 			<div class="mb-3">
 				<label for="exampleFormControlInput1" class="form-label">Nome</label>
