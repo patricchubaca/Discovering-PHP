@@ -22,6 +22,16 @@
 		</div>
 	</div>
 	<div class="container">
+		<div class="col-4 mt-2 mb-3">
+			<div class="input-group">
+				<span class="input-group-text">Busca por nome</span>
+				<input type="text" aria-label="First id="input-campo"  class="form-control">
+			</div>	
+		</div>	
+
+		
+	</div>
+	<div class="container">
 		<table class="table">
 			<thead>
 				<tr>
@@ -44,7 +54,7 @@
 							<a href="<?php echo site_url('DropRegister/deleteRegister/'.$inscrito['id']);?>">
 								<button class="btn btn-danger">Deletar</button>
 							</a>
-								<a href="<?php echo site_url('EditRegister/editRegister/'.$inscrito['id']);?>">
+							<a href="<?php echo site_url('EditRegister/editRegister/'.$inscrito['id']);?>">
 								<button class="btn btn-warning">Editar</button>
 							</a>	
 						</td>
@@ -52,5 +62,7 @@
 				<?php } ?>
 			</tbody>
 		</table>
+
+		<script type="text/javascript" src="<?php echo base_url('assets/js/buscarPorNome.js')?>"></script>
 	</body>
 	</html>

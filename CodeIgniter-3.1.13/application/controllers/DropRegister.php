@@ -7,6 +7,7 @@ class DropRegister extends CI_Controller{
 	public function deleteRegister($id){
 
 		$this->db->where('id', $id);
+		
 		$this->db->delete('inscritos');
 
 		$lista = $this->db->get("inscritos")->result_array();
