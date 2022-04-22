@@ -6,7 +6,7 @@ buscarPorNome.addEventListener("input" , async (event) => {
 
 	let dadosForm = this.value;
 
-        const dados = await fetch("Dashboard/index.php", {
+        const dados = await fetch("dashboard/index", {
         method: "POST",
         body: dadosForm,
     });
@@ -14,9 +14,6 @@ buscarPorNome.addEventListener("input" , async (event) => {
     const resposta = await dados.json();
 
 
-	function buscaNome(){
-
-	}
 
 
 });
