@@ -25,7 +25,7 @@
 		<div class="col-4 mt-2 mb-3">
 			<div class="input-group">
 				<span class="input-group-text">Busca por nome</span>
-				<input type="text" aria-label="First id="input-campo"  class="form-control">
+				<input type="text" aria-label="First id="input-campo"  class="form-control" placeholder="Busque as inscrições">
 			</div>	
 		</div>	
 

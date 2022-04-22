@@ -22,7 +22,7 @@
 		</div>
 	</div>
 
-	<form action="<?php echo site_url('Register/register')?>" method="post">
+	<form action="<?php echo site_url('Register/registerSave')?>" method="post">
 		<div class="container">
 			<div class="alert alert-danger mt-2" role="alert">
 				Usuário ja registrado!
