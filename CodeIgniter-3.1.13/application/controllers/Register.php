@@ -13,7 +13,7 @@ class Register extends CI_Controller {
 		$this->load->view('dashboard', $dados);
 	}
 
-	public function register(){
+	public function registerSave(){
 
 		$usuarios = array(
 			"nome" => $this->input->post("nome"),
