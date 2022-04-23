@@ -2,11 +2,9 @@ var buscarPorNome = document.querySelector("input");
 
 buscarPorNome.addEventListener("input" , async (event) => {
 
-	event.preventDefault();
+	let dadosForm = buscarPorNome.value;
 
-	let dadosForm = this.value;
-
-    const dados = await fetch('RetornoBusca/index');
+    const dados = await fetch('./RetornoBusca/buscaNome/'+ dadosForm);
 
     const resposta = await dados.json();
 
