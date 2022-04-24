@@ -11,7 +11,6 @@ class RetornoBusca extends CI_Controller{
 		$dados = array("inscritos"=>$lista);
 
 		echo json_encode($dados);
-
 	}
 
 	public function buscaNome($nome){
@@ -23,6 +22,8 @@ class RetornoBusca extends CI_Controller{
 		echo json_encode($dados);
 
 	}
+
+	
 
 }
 
