@@ -16,10 +16,6 @@ class RetornoBusca extends CI_Controller{
 
 	public function buscaNome($nome){
 
-		echo json_encode($nome."Pizza");
-
-		exit();
-
 		$lista = $this->db->get("inscritos")->result_array();
 
 		$dados = array("inscritos"=>$lista);

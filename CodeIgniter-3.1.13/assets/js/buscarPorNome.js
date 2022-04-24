@@ -10,7 +10,9 @@ buscarPorNome.addEventListener("input" , async (event) => {
 
     console.log(resposta);
 
+    console.log(resposta['inscritos'][0]);
 
+    console.log(resposta['inscritos'][2]);
 
 
 });
