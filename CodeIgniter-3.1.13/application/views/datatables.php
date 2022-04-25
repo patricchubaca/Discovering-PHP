@@ -16,8 +16,13 @@
 	
 	<div class="container">
 		<div class="container">
-			<h1>DataTables</h1>
+			<h1>Lista dos Cadastrados</h1>
 		</div>
+		<div class="text-end mb-5">
+				<a href="<?php echo site_url('Register/pageRegister')?>">
+					<button class="btn btn-primary">Cadastrar</button>
+				</a>	
+			</div>
 		<table class="table" id="tableUsuarios">
 			<thead>
 				<tr>
@@ -26,6 +31,7 @@
 					<th scope="col">Email</th>
 					<th scope="col">Cidade</th>
 					<th scope="col">uf</th>
+
 				</tr>
 			</thead>
 			<tbody>
