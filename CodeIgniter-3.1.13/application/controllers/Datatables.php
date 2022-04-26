@@ -8,10 +8,8 @@ class Datatables extends CI_Controller {
 
 		$lista = $this->db->get("inscritos")->result_array();
 
-		//$dados = array("data"=>$lista);
-		//echo "<pre>";
-		//echo(json_encode($dados));	
 		foreach ($lista as $listas) {
+			
 			$result[]= [
 				$listas['id'],
 				$listas['nome'],
