@@ -33,7 +33,6 @@ class RegisterController extends BaseController
 			'data' => $result
 		];
 
-		
 
 		return json_encode($usuarios);
 
