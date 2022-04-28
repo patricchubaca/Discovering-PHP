@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +15,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+    $recuperarDados = DB::table('inscritos')->get();
+
+    echo "<pre>";
+    var_dump($recuperarDados);
+    echo "<pre>";
+    
+    return view('dashboard', $recuperarDados);
 });
 
 Route::get('/nova', 'App\Http\Controllers\RegisterController@listaDadosAction');

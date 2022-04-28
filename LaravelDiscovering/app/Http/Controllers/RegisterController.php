@@ -8,7 +8,7 @@ class RegisterController extends BaseController
 {
 	public function listaDadosAction(){
 
-		echo "Hello World";
+		 return view('register');
 
 	}
 }

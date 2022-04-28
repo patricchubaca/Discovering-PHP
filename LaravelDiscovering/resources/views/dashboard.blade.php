@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,8 +12,6 @@
     <link src="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css.js">
 
     <link rel="stylesheet" href="./CSS/style.css">
-
-    <script src="./JavaScript/app.js"></script>
 
     <title>Laravel</title>
 </head>
@@ -41,23 +40,8 @@
             </tbody>
         </table>
     </div>  
-    <script>
 
-        $(document).ready( function () {
-            $('#myTable').DataTable();
-        } );
-
-
-        var botao = document.querySelector("#botao");
-
-
-        botao.addEventListener("click", function(event) {
-
-
-            alert('oi');
-
-        });
-        
-    </script>
+   
+    
 </body>
 </html>
