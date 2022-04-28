@@ -16,16 +16,17 @@ use Illuminate\Support\Facades\DB;
 
 Route::get('/', function () {
 
-    $recuperarDados = DB::table('inscritos')->get();
+    $users = DB::table('inscritos')->get();
 
-    echo "<pre>";
-    var_dump($recuperarDados);
-    echo "<pre>";
     
-    return view('dashboard', $recuperarDados);
+
+
+    return view('dashboard');
 });
 
-Route::get('/nova', 'App\Http\Controllers\RegisterController@listaDadosAction');
+Route::get('/novajj', 'App\Http\Controllers\RegisterController@listaDadosAction');
+
+Route::get('/nova', 'App\Http\Controllers\RegisterController@JSONlistaDadosAction');
 
 
 

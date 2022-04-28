@@ -6,9 +6,19 @@ use Illuminate\Routing\Controller as BaseController;
 
 class RegisterController extends BaseController
 {
-	public function listaDadosAction(){
+	public function registerAction(){
 
 		 return view('register');
+
+	}
+
+	public function JSONlistaDadosAction(){
+
+		$users = DB::table('inscritos')->get();
+
+		$dados = array("inscritos"=>$users);
+
+		return json_encode($dados);
 
 	}
 }

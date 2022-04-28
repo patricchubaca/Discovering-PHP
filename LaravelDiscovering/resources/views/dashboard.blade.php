@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/jq-3.6.0/dt-1.11.5/datatables.min.css"/>
 
-    <link src="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css.js">
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/jq-3.6.0/dt-1.11.5/datatables.min.js"></script>
 
     <link rel="stylesheet" href="./CSS/style.css">
 
@@ -25,7 +25,7 @@
                 <button class="btn btn-primary">Cadastrar</button>
             </a>    
         </div>
-        <table class="table" id="myTable">
+        <table class="table" id="tableUsuarios">
             <thead>
                 <tr>
                     <th scope="col">ID</th>
@@ -42,6 +42,13 @@
     </div>  
 
    
-    
+    <script type="text/javascript">
+        
+      $(document).ready(function() {
+            $('#tableUsuarios').DataTable( {
+                "ajax": "/nova"
+            } );
+        } );
+    </script>
 </body>
 </html>
