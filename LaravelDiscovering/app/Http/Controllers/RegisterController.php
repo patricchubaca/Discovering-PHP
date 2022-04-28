@@ -28,7 +28,6 @@ class RegisterController extends BaseController
 			];
 
 		}
-
 		$usuarios = [
 			'data' => $result
 		];
