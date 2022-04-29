@@ -6,13 +6,8 @@ use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Support\Facades\DB;
 use App\Models\Inscrito;
 
-class RegisterController extends BaseController
+class InscritosController extends BaseController
 {
-	public function registerAction(){
-
-		 return view('register');
-
-	}
 
 	public function JSONlistaDadosAction(){
 
