@@ -46,7 +46,6 @@
       $(document).ready(function() {
         $('#tableUsuarios').DataTable( {
             "ajax": "/api/nova",
-
             "columns": [
             { "data": "id" },
             { "data": "nome" },
