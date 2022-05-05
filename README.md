@@ -1,5 +1,3 @@
-
-
 # Discovering-PHP
 ### PHP + MYSQL
 ##### Algumas instruções caso você tenha interesse de executar este projeto com um SO Linux Ubunto com o PHP. 

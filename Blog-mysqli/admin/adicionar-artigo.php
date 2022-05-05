@@ -8,7 +8,6 @@
             $artigo = new Artigo($mysql);
             $artigo->saveArticle($_POST['titulo'], $_POST['conteudo'], $_POST['carga']);
 
-
             redireciona('/admin/index.php'); 
      }
     
