@@ -1,13 +1,32 @@
 <?php
 
-	include("conexao.php");
+	
+$servername = "localhost:3306";
+$username = "root";
+$password = "root";
 
-	$input = $_POST['input'];
 
-	$query = "SELECT * FROM incritos WHERE nome LIKE '%{$input}%'";
+try {
+  $conn = new PDO("mysql:host=$servername;dbname=MyDB", $username, $password);
+  // set the PDO error mode to exception
+  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  echo "Connected successfully HAHA";
+} catch(PDOException $e) {
+  echo "Connection failed: " . $e->getMessage();
+}
 
-	$stmt = $conn->prepare($query);
+	$input = 'pat';
 
-	$stmt->exec();
+	$query = "SELECT * FROM inscritos WHERE nome LIKE '%{$input}%'";
 
-	var_dump($stmt);
+	$stmt = $conn->query($query);
+
+
+
+	$stmts = $stmt->fetchAll();
+
+		echo "<pre>";
+
+	var_dump($stmts);
+
+		echo "</pre>";
