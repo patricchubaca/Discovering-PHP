@@ -1,1 +1,0 @@
-alert("Acorda pra guspir kkk");
