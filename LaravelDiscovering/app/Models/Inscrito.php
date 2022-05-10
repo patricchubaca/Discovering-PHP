@@ -9,5 +9,8 @@ class Inscrito extends Model
 {
     use HasFactory;
 
+    protected $table = "inscritos";
+
+    public $timestamps = false;
     
 }

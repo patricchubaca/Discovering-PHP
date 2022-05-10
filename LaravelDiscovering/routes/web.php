@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\saveController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,11 +16,10 @@ use Illuminate\Support\Facades\DB;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function () { return view('dashboard'); });
 
-    return view('dashboard');
+Route::get('/register', function () { return view('register'); });
 
-    
-});
+Route::post('/save', [saveController::class, 'saveAction'] );
 
 
