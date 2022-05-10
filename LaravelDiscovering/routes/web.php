@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
-use App\Http\Controllers\saveController;
+use App\Http\Controllers\SaveController;
 
 
 /*
@@ -20,6 +20,6 @@ Route::get('/', function () { return view('dashboard'); });
 
 Route::get('/register', function () { return view('register'); });
 
-Route::post('/save', [saveController::class, 'saveAction'] );
+Route::post('/save', [SaveController::class, 'indexAction'] );
 
 

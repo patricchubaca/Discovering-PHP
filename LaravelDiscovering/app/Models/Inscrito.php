@@ -12,5 +12,7 @@ class Inscrito extends Model
     protected $table = "inscritos";
 
     public $timestamps = false;
+
+    protected $fillable = ['nome','email','cidade','uf'];
     
 }
