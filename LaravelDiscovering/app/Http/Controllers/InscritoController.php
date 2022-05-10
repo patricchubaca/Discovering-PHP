@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\DB;
 
-class SaveController extends Controller
+class InscritosController extends Controller
 {
     /**
      * Display a listing of the resource.
