@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\DB;
 
-class InscritosController extends Controller
+class InscritoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,18 +18,7 @@ class InscritosController extends Controller
      */
     public function indexAction(Request $request)
     {
-
-        $inscrito = new Inscrito();
-
-        $inscrito->nome = $request->nome;
-
-        $inscrito->email = $request->email;
-
-        $inscrito->cidade = $request->cidade;
-        
-        $inscrito->uf = $request->uf; 
-
-        $inscrito->save();  
+        $inscrito = Inscrito::create($request->all());
 
         return view('dashboard');   
     }

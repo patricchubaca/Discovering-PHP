@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
-use App\Http\Controllers\SaveController;
+use App\Http\Controllers\InscritoController;
 
 
 /*
@@ -20,6 +20,6 @@ Route::get('/', function () { return view('dashboard'); });
 
 Route::get('/register', function () { return view('register'); });
 
-Route::post('/save', [SaveController::class, 'indexAction'] );
+Route::post('/save', [InscritoController::class, 'indexAction'] );
 
 
