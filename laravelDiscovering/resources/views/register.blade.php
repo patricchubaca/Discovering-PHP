@@ -18,7 +18,7 @@
       <div class="py-3">
         <h3>Cadastro de Bancos para Remessa</h3>  
       </div>
-      <form method="POST" action="/save">
+      <form method="POST" action="/banco">
         @csrf
         <div class="container">
           <div class="row g-3">

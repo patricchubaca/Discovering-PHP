@@ -14,6 +14,23 @@ use App\Http\Controllers\BanckController;
 |
 */
 
-Route::get('/', function () { return view('welcome'); });
+##################### Dashboard #########################
+Route::get('/index', [BanckController::class, 'index'] );
 
-Route::post('/save', [BanckController::class, 'store'] );
+##################### Chamadas de Views ##################
+Route::get('/', function () {return view('dashboard');});
+Route::get('/registerMateriais', function () {return view('materiais');});
+Route::get('/register', function () {return view('register');});
+
+
+##################### Materiais #########################
+Route::post('/materiais', [BanckController::class, 'create'] );
+
+
+
+
+##################### Bancos #########################
+Route::post('/banco', [BanckController::class, 'store'] );
+
+
+

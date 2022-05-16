@@ -4,9 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-
-
-class Banck extends Model
+class SgiBancos extends Model
 {
 
     protected $table = "sgibancos";
@@ -32,6 +30,7 @@ class Banck extends Model
     'cart_topo',
     'intrudocao1',
     'introdocao2',
-    'inscritos3'              
+    'inscritos3'    
+              
     ];
 }

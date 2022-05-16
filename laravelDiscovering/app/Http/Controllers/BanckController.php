@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Banck;
+use App\Models\SgiBancos;
+use App\Models\SgiEsttipo;
 
 class BanckController extends Controller
 {
@@ -14,17 +15,16 @@ class BanckController extends Controller
      */
     public function index()
     {
-        //
+        return ['data'=> SgiEsttipo::all()];
     }
-
     /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        echo "Hellow";
     }
 
     /**
@@ -35,7 +35,7 @@ class BanckController extends Controller
      */
     public function store(Request $request)
     {   
-       $banck = Banck::create($request->all());
+       $banck = SgiBancos::create($request->all());
 
         return view('dashboard');  
     }
