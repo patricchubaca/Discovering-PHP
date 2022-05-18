@@ -3,7 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\BanckController;
+use App\Http\Controllers\MateriaisController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,4 +20,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/index', [BanckController::class , 'index']);
+
+Route::get('/index', [MateriaisController::class, 'index']);

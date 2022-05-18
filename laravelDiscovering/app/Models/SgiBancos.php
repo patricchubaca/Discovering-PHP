@@ -13,7 +13,7 @@ class SgiBancos extends Model
 
     protected $fillable = [
 
-    'registro',
+    'id',
     'numero',
     'agencia',
     'conta_corrente',

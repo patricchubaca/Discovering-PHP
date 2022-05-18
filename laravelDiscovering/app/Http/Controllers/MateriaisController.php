@@ -3,28 +3,46 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\SgiBancos;
+use App\Models\SgiEsttipo;
 
-class BanckController extends Controller
+class MateriaisController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-
-    public function index()
+    public function index(Request $request)
     {
+        $all = SgiEsttipo::all();
 
+        foreach ($all as $key => $value) {
+
+            $registro = [];
+
+            $registro['id'] = $value['id'];
+            $registro['sigla'] = $value['sigla'];
+            $registro['tipo'] = $value['tipo'];
+            $registro['formula'] = $value['formula'];
+            $registro['codigo_sped'] = $value['codigo_sped'];
+            $id = $value['id'];
+       
+            $registro['button'] = '<button class="button is-info is-light" onclick="visualisarUsuario('.$id.')">Editar</button>
+                                   <button class="button is-danger is-light" onclick="deletarUsuario('.$id.')">Delete</button>';
+            $data[] = $registro;
+        }
+
+        return ['data'=>$data];   
     }
+
     /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function create(Request $request)
+    public function create()
     {
-      
+        $materiais = SgiEsttipo::create($request->all());
     }
 
     /**
@@ -34,10 +52,8 @@ class BanckController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {   
-       $banck = SgiBancos::create($request->all());
-
-        return view('dashboard');  
+    {
+        //
     }
 
     /**
@@ -48,7 +64,9 @@ class BanckController extends Controller
      */
     public function show($id)
     {
-        //
+        $material = SgiEsttipo::find($id);
+
+        return $material;  
     }
 
     /**
@@ -82,5 +100,9 @@ class BanckController extends Controller
      */
     public function destroy($id)
     {
-    }
+     $data = SgiEsttipo::find($id);
+     $data->delete();
+
+    return;
+ }
 }

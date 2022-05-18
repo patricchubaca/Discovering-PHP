@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +30,7 @@
          Lista de <strong>produtos</strong>!
          <div class="text-end mb-5">
           <div class="column" id="UM">
-            <button class="button is-medium"><a id="button" href="{{url('/registerMateriais')}}">Dash</a></button>
+            <button class="button is-medium button is-info"><a id="button" href="{{url('/registerMateriais')}}">Registrar Material</a></button>
           </div>
         </div>
       </p>
@@ -41,13 +42,24 @@
           <th scope="col">Descrição</th>
           <th scope="col">Composição</th>
           <th scope="col">Código Spead</th>
+          <th scope="col">Ações</th>
         </tr>
       </thead>
       <tbody>
-        
+
       </tbody>
     </table>
+
+    <div class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <!-- Any other Bulma elements you want -->
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
   </div>  
+
+  <script type="text/javascript" src="./Javascript/main.js"></script>
 
   <script type="text/javascript">
 
@@ -58,11 +70,13 @@
         {"data":"sigla" },
         {"data":"tipo" },
         {"data":"formula" },
-        {"data":"codigo_sped" }
+        {"data":"codigo_sped" },
+        {"data":"button" }
         ]
       } );
-
     } );
+
   </script>
+
 </body>
 </html>

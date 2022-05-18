@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BanckController;
 
+use App\Http\Controllers\MateriaisController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,22 +17,21 @@ use App\Http\Controllers\BanckController;
 */
 
 ##################### Dashboard #########################
-Route::get('/index', [BanckController::class, 'index'] );
+Route::get('/', function () {return view('dashboard'); } );
 
 ##################### Chamadas de Views ##################
-Route::get('/', function () {return view('dashboard');});
-Route::get('/registerMateriais', function () {return view('materiais');});
+//Route::get('/', function () {return view('dashboard');});
+Route::get('/registerMateriais', function () {return view('materiais'); } );
 Route::get('/register', function () {return view('register');});
 
-
 ##################### Materiais #########################
-Route::post('/materiais', [BanckController::class, 'create'] );
-
-
-
+Route::post('/materiais', [MateriaisController::class, 'create'] );
+Route::get('/materiais/{id}', [MateriaisController::class, 'show'] );
+Route::get('/materiais/{id}', [MateriaisController::class, 'show'] );
+Route::get('delete/{id}', [MateriaisController::class, 'destroy'] );
 
 ##################### Bancos #########################
-Route::post('/banco', [BanckController::class, 'store'] );
+Route::post('/banco', [BanckController::class, 'store'] );	
 
 
 

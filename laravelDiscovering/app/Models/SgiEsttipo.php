@@ -12,9 +12,9 @@ class SgiEsttipo extends Model
     public $timestamps = false;
 
     protected $fillable = [
-
-        'registro',
-        'siglas',
+        
+        'id',
+        'sigla',
         'tipo',
         'formula',
         'codigo_sped'    
