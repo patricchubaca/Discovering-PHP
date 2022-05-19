@@ -14,6 +14,8 @@
 
   <script type="text/javascript" src="https://cdn.datatables.net/v/dt/jq-3.6.0/dt-1.11.5/datatables.min.js"></script>
 
+
+
   <link rel="stylesheet" href="./CSS/style.css">
 
   <title>Occtoplus</title>
@@ -28,7 +30,24 @@
         </h1>
         <p class="subtitle">
          Lista de <strong>produtos</strong>!
-         <div class="text-end mb-5">
+         <div class="modal" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Modal body text goes here.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-end mb-5">
           <div class="column" id="UM">
             <button class="button is-medium button is-info"><a id="button" href="{{url('/registerMateriais')}}">Registrar Material</a></button>
           </div>
@@ -50,33 +69,46 @@
       </tbody>
     </table>
 
-    <div class="modal">
-      <div class="modal-background"></div>
-      <div class="modal-content">
-        <!-- Any other Bulma elements you want -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit Produtos</h5>
+            <div class="control">
+            </div>
+          </div>
+          <div class="modal-body">
+            <label>Sigla:</label>
+            <div class="control">
+              <input class="input is-hovered" type="text">
+            </div>
+              <label>Descrição:</label>
+            <div class="control">
+              <input class="input is-hovered" type="text">
+            </div>
+              <label>Composição:</label>
+            <div class="control">
+              <input class="input is-hovered" type="text">
+            </div>
+                <label>COD Spead:</label>
+            <div class="control">
+              <input class="input is-hovered" type="text">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
       </div>
-      <button class="modal-close is-large" aria-label="close"></button>
     </div>
-  </div>  
 
-  <script type="text/javascript" src="./Javascript/main.js"></script>
 
-  <script type="text/javascript">
+    <script type="text/javascript" src="./Javascript/main.js"></script>
+    <script type="text/javascript" src=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    $(document).ready(function() {
-      $('#tableUsuarios').DataTable( {
-        "ajax": "/api/index",
-        "columns": [
-        {"data":"sigla" },
-        {"data":"tipo" },
-        {"data":"formula" },
-        {"data":"codigo_sped" },
-        {"data":"button" }
-        ]
-      } );
-    } );
 
-  </script>
 
-</body>
-</html>
+  </body>
+  </html>

@@ -27,7 +27,7 @@ class MateriaisController extends Controller
             $registro['codigo_sped'] = $value['codigo_sped'];
             $id = $value['id'];
        
-            $registro['button'] = '<button class="button is-info is-light" onclick="visualisarUsuario('.$id.')">Editar</button>
+            $registro['button'] = '<button class="button is-info is-light" onclick="visualisarUsuario('.$id.')" id="modal" data-bs-toggle="modal" data-bs-target="#exampleModal">Editar</button>
                                    <button class="button is-danger is-light" onclick="deletarUsuario('.$id.')">Delete</button>';
             $data[] = $registro;
         }
