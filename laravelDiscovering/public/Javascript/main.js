@@ -16,6 +16,7 @@ if(formNewUser){
          body: dadosForm
       });
 
+      location.reload(true);
    });
 }
 
@@ -37,7 +38,9 @@ async function deletarUsuario(id){
    const dados = await fetch('delete/' + id);
    const res = await dados.json();
 
-    location.reload(true);
+    if (res  " "){
+      location.reload(true);
+    } 
 } 
 
 

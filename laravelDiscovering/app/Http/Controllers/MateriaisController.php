@@ -44,7 +44,7 @@ class MateriaisController extends Controller
     {
         $materiais = SgiEsttipo::create($request->all());
 
-        return;
+        return view('dashboard');
     }
 
     /**
@@ -112,6 +112,7 @@ class MateriaisController extends Controller
      $data = SgiEsttipo::find($id);
      $data->delete();
 
-    return;
+     return "ok";
+
  }
 }
