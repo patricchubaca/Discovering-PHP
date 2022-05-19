@@ -1,16 +1,34 @@
-  const sigButton = document.querySelector('#modFl');
-  const modal = document.querySelector('.modal-background');
-  const modalBg = document.querySelector('.modal');
 
+ 
+const formNewUser = document.getElementById("form-cad-usuario");
 
-  $('#modal').click(function(){
-      $('.modal').addClass('is-active');
-  });
+if(formNewUser){
+      formNewUser.addEventListener("submit", async(e) => {
+      
+      e.preventDefault();
+
+      var id = document.getElementById("editid").value;
+    
+      const dadosForm = new FormData(formNewUser);
+
+      const dados = await fetch('materiais/'+ id,{
+         method:"POST",
+         body: dadosForm
+      });
+
+   });
+}
 
 async function visualisarUsuario(id){
 
    const dados = await fetch('materiais/' + id);
    const res = await dados.json();
+
+    document.getElementById("editid").value = res['id'];
+    document.getElementById("editsigla").value = res['sigla'];
+    document.getElementById("edittipo").value = res['tipo'];
+    document.getElementById("editformula").value = res['formula'];
+    document.getElementById("editcodigo_sped").value = res['codigo_sped'];
 
 }
 

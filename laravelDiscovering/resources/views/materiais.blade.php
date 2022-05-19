@@ -34,12 +34,6 @@
       <div class="column">
         <div class="columns">
           <div class="column">
-            <div class="hidden">
-              <label class="label">Registro:</label>
-              <div class="control">
-                <input class="input" type="text" placeholder="18" name="registro">
-              </div>
-            </div>
             <div class="field">
               <label class="label">Sigla:</label>
               <div class="control">

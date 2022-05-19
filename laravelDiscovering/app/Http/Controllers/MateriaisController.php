@@ -40,9 +40,11 @@ class MateriaisController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
         $materiais = SgiEsttipo::create($request->all());
+
+        return;
     }
 
     /**
@@ -89,7 +91,14 @@ class MateriaisController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $updateMaterial = SgiEsttipo::find($request->id);
+        $updateMaterial->sigla = $request->sigla;
+        $updateMaterial->tipo = $request->tipo;
+        $updateMaterial->formula = $request->formula;
+        $updateMaterial->codigo_sped = $request->codigo_sped;
+
+        $updateMaterial->save();
+
     }
 
     /**

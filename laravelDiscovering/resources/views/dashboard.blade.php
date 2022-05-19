@@ -77,38 +77,41 @@
             <div class="control">
             </div>
           </div>
-          <div class="modal-body">
-            <label>Sigla:</label>
-            <div class="control">
-              <input class="input is-hovered" type="text">
-            </div>
+          <form method="POST" id="form-cad-usuario">
+            @csrf 
+            <div class="modal-body">
+              <div class="control">
+                <input class="" name="id" type="text" id="editid">
+              </div>
+              <label>Sigla:</label>
+              <div class="control">
+                <input class="input is-hovered" name="sigla" type="text" id="editsigla">
+              </div>
               <label>Descrição:</label>
-            <div class="control">
-              <input class="input is-hovered" type="text">
-            </div>
+              <div class="control">
+                <input class="input is-hovered" name="tipo" type="text" id="edittipo">
+              </div>
               <label>Composição:</label>
-            <div class="control">
-              <input class="input is-hovered" type="text">
+              <div class="control">
+                <input class="input is-hovered" name="formula" type="text" id="editformula">
+              </div>
+              <label>COD Spead:</label>
+              <div class="control">
+                <input class="input is-hovered" name="codigo_sped" type="text" id="editcodigo_sped">
+              </div>
             </div>
-                <label>COD Spead:</label>
-            <div class="control">
-              <input class="input is-hovered" type="text">
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary">Save changes</button>
             </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
+          </form>
         </div>
       </div>
     </div>
 
-
     <script type="text/javascript" src="./Javascript/main.js"></script>
-    <script type="text/javascript" src=""></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-
-  </body>
-  </html>
+ </body>
+ </html>
