@@ -23,7 +23,6 @@ CREATE DATABASE IF NOT EXISTS `blog` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8m
 USE `blog`;
 
 -- --------------------------------------------------------
-
 --
 -- Table structure for table `artigos`
 --

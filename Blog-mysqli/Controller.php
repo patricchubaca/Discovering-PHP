@@ -16,7 +16,6 @@ class Artigo
         
         $selecionaArtigo->execute();        
     }
-
     public function exibirTodos(): array
     {
         $resultado = $this->mysql->query('SELECT id, titulo, conteudo, cargaHoraria FROM artigos');
