@@ -38,7 +38,7 @@ async function deletarUsuario(id){
    const dados = await fetch('delete/' + id);
    const res = await dados.json();
 
-    if (res  " "){
+    if (res == true){
       location.reload(true);
     } 
 } 

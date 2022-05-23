@@ -112,7 +112,7 @@ class MateriaisController extends Controller
      $data = SgiEsttipo::find($id);
      $data->delete();
 
-     return "ok";
+     return true;
 
  }
 }

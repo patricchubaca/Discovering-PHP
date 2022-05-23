@@ -81,7 +81,7 @@
             @csrf 
             <div class="modal-body">
               <div class="control">
-                <input class="" name="id" type="text" id="editid">
+                <input class="invisible" name="id" type="text" id="editid">
               </div>
               <label>Sigla:</label>
               <div class="control">
