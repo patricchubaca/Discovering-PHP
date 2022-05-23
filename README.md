@@ -6,6 +6,7 @@
  
  	 sudo apt install git
 	 
+	 
  Caso tenha interesse em clonar este repositório você deve utilizar o comando git mais a url:
  
  	git clone https://github.com/patricchubaca/Discovering-PHP.git 
