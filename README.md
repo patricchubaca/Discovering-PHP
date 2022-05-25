@@ -1,6 +1,6 @@
 # Discovering-PHP
 ### PHP + MYSQL
-#### Projeto Alura Blog com PHP e MySQLi, refatorando conhecimentos. 
+##### Projeto Alura Blog com PHP e MySQLi 
 ##### Algumas instruções caso você tenha interesse de executar este projeto com um SO Linux Ubunto com o PHP. 
 
  Caso você não tenha o git, instale o git com o seguinte comando: 
