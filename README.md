@@ -72,6 +72,10 @@ Instruções para acessar o banco.
 
 ### COMANDO PARA ATIVIDADES NO LINUX  
 
+APAGAR DIRETÓRIOS E ARQUIVOS
+
+	rm -d Dir
+
 RENOMEAR ARQUIVO
 	
 	mv arquivo.txt novoArquivo.txt
