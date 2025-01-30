@@ -29,10 +29,8 @@ Assim, você só vai precisar do MySQL Server como base de dados e pode rodar o 
 Você pode mudar caso já tenha algo sendo executado.
 	
   Simulação do numero da porta :
-  
-  	$porta = 8080;
 	  
-  	php -S localhost:$porta 	
+  	php -S localhost:8080
 	  
   Exemplo de como vai ser executado :
     	
@@ -69,43 +67,5 @@ Instruções para acessar o banco.
 		
 		 DESC 'nome_tabela';
 		 DESC 'data_base';
-
-### COMANDO PARA ATIVIDADES NO LINUX  
-
-APAGAR DIRETÓRIOS E ARQUIVOS
-
-	rm -d Dir
-
-RENOMEAR ARQUIVO
-	
-	mv arquivo.txt novoArquivo.txt
-
-CRIANDO ARQUIVO
-	
-	touch arquivoNovo.extensao
-	
-PERMISÃO DE LEITURA E ESCRITA
-	
-	chmod 666 /tmp/debugPatric
-
-ESCREVE AS ULTIMAS 10 LINHAS DO ARQUIVO 
-		  
- 	tail -f /tmp/debugPatric
-
-### Metodo PHP para debug e leitura de Objetos e Strings
-	
-Debug de Arrays e Obijetos 
-		  
-	 file_put_contents('/tmp/degubPatric', date('H:i:s')." Debug Result Arrays =>"."$conteudo\n", FILE_APPEND);
-	  
-Debug de Strings 			
-	
-	file_put_contents('/tmp/degubPatric', date('H:i:s'). "$conteudo\n", FILE_APPEND);
-
-Debug de Objetos e Arrays diretamente na tela formatado
-
-	echo "<pre>";
-	var_dump($lista);
-	echo "</pre>";
 
 
