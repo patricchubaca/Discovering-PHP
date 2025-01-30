@@ -51,7 +51,7 @@ Instruções para iniciar o xampp.
 	 	
 		sudo /opt/lampp/lampp start
 
-### START MYSQL SERVER 
+### ACESSO AO MYSQL  
         
 Instruções para acessar o banco.
 - Caso você queira usar a o banco de dados via linha de comando:
